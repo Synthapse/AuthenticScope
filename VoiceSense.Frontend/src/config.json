@@ -1,0 +1,21 @@
+{
+    "apps": {
+        "VoiceSenseAPI": {
+            "url": "http://localhost:8000",
+            "isProduction": true
+        },
+        "GoogleAnalitycs": {
+            "measurement_id": "G-89BVJFQSJC",
+            "stream_id": "5982950404"
+        },
+        "Firebase": {
+            "apiKey": "AIzaSyB4eO-6AUvvNuiVozoZO7EeQKlzAptHkjc",
+            "authDomain": "voicesense.firebaseapp.com",
+            "projectId": "voicesense",
+            "storageBucket": "voicesense.appspot.com",
+            "messagingSenderId": "319936913236",
+            "appId": "1:319936913236:web:6b72f40ed60987959db2c1",
+            "measurementId": "G-7L0RQ7LQCX"
+        }
+    }
+}
