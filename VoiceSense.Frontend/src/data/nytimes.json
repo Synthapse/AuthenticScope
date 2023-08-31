@@ -1,5 +1,45 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/30/business/voice-deepfakes-bank-scams.html",
+        "AIArticleTitle": "Voice Deepfakes Are Coming for Your Bank Balance",
+        "AIArticleDate": "August 30, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/29/podcasts/headlines-nyt-audio-app.html",
+        "AIArticleTitle": "Today\u2019s Top News: Trump Gets a Trial Date, and More",
+        "AIArticleDate": "August 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/interactive/2023/08/27/magazine/daniel-dennett-interview.html",
+        "AIArticleTitle": "How to Live a Happy Life, From a Leading Atheist",
+        "AIArticleDate": "August 27, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/22/books/review/empire-of-the-sum-keith-houston.html",
+        "AIArticleTitle": "It Totally Peaked in High School",
+        "AIArticleDate": "August 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html",
+        "AIArticleTitle": "The Desperate Hunt for the A.I. Boom\u2019s Most Indispensable Prize",
+        "AIArticleDate": "August 16, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/15/business/artificial-intelligence-construction-real-estate.html",
+        "AIArticleTitle": "A.I. Can\u2019t Build a High-Rise, but It Can Speed Up the Job",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/15/arts/television/comedy-artificial-intelligence-chatgpt.html",
+        "AIArticleTitle": "In the Battle Between Bots and Comedians, A.I. Is Killing",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/08/14/style/werner-herzog-ai-poetry.html",
+        "AIArticleTitle": "A New Role for Werner Herzog: The Voice of A.I. Poetry",
+        "AIArticleDate": "August 14, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/08/27/us/politics/ai-air-force.html",
         "AIArticleTitle": "A.I. Brings the Robot Wingman to Aerial Combat",
         "AIArticleDate": "August 27, 2023"
