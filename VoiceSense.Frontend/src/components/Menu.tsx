@@ -1,9 +1,8 @@
 
-import { BsCalendar3 } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import { CgProfile } from 'react-icons/cg';
 import { PiArticle } from 'react-icons/pi';
-import { GrArticle } from 'react-icons/gr';
+import { GoHistory } from 'react-icons/go';
 import styled, { ThemeContext } from 'styled-components';
 import { lightTheme } from '..';
 
@@ -64,7 +63,7 @@ const Menu = () => {
                         <p><PiArticle style={{ fontSize: iconSize }} /></p>
                     </MenuItem>
                     <MenuItem onClick={() => navigateToPage("/history")}>
-                        <p><BsCalendar3 style={{ fontSize: iconSize }} /></p>
+                        <p><GoHistory style={{ fontSize: iconSize }} /></p>
                     </MenuItem>
                     <MenuItem onClick={() => navigateToPage("/profile")}>
                         <p><CgProfile style={{ fontSize: iconSize }} /></p>
