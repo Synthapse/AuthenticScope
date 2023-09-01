@@ -3,7 +3,7 @@ import { useLottie } from "lottie-react";
 import Cancel from '../lottie/cancel.json'
 import { GrFormNextLink } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
-import { HoverDiv, primaryColor } from '../Demo';
+import { HoverDiv, primaryColor } from '../ArticleList';
 
 
 export const StripeCancel = () => {

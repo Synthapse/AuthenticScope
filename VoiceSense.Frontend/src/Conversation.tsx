@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import config from "./config.json";
-import { HoverDiv, IVoice, Select } from "./Demo";
+import { HoverDiv, IVoice, Select } from "./ArticleList";
 import UploadFiles from "./UploadFile";
 import { IoIosReturnLeft } from "react-icons/io";
 import { useNavigate } from "react-router-dom";

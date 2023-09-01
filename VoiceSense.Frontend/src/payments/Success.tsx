@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLottie } from "lottie-react";
 import Success from '../lottie/success.json'
-import { HoverDiv, primaryColor } from '../Demo';
+import { HoverDiv, primaryColor } from '../ArticleList';
 import { GrFormNextLink } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
 

@@ -6,7 +6,7 @@ import { FiMusic, FiPauseCircle, FiPlayCircle } from "react-icons/fi";
 import { BsSoundwave } from "react-icons/bs";
 import { PiQueueFill } from "react-icons/pi";
 import config from "./config.json";
-import { HoverDiv, IVoice, LinkText, Select } from './Demo';
+import { HoverDiv, IVoice, LinkText, Select } from './ArticleList';
 import axios from 'axios';
 import { Dna } from 'react-loader-spinner';
 import { Button } from 'shards-react';

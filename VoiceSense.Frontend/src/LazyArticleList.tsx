@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { GrArticle, GrFormNextLink } from "react-icons/gr";
 import { Dna } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
-import { AIArticle, HoverDiv, primaryColor } from "./Demo";
+import { AIArticle, HoverDiv, primaryColor } from "./ArticleList";
 import { parseDateTime } from "./utils";
 import styled from "styled-components";
 
@@ -36,7 +36,6 @@ const ArticleListItem = styled.div`
         margin-bottom: 0px;
         font-size: 18px;
         font-weight: bold;
-        color: #212529; 
     }
 
     > div {
@@ -57,7 +56,6 @@ const ArticleListElement = styled.div`
         font-size: 24px;
         font-weight: bold;
         line-height: 1.45;
-        color: #212529; 
     }
 `
 

@@ -39,7 +39,6 @@ const ButtonContainer = styled.div`
 const Paragraph = styled.p`
     font-size: 16px;
     max-width: 100%;
-    color: #212529;
     @media ${devices.laptopL} {
         font-size: 14px;
         max-width: 50%;
