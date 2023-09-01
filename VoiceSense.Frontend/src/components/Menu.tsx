@@ -14,6 +14,7 @@ const MenuContainer = styled.div`
     left: 0;
     top: 0;
     position: fixed;
+    background-color: ${({ theme }) => theme === lightTheme ? '#f5f5f5' : '#30363d'};
     border-right: ${({ theme }) => theme === lightTheme ? '1px solid #30363d' : '1px solid white'};
     display: flex;
     flex-direction: column;
