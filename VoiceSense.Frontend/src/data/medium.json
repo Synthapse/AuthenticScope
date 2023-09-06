@@ -1,5 +1,575 @@
 [
     {
+        "AIArticleLink": "https://medium.com/towards-data-science/new-chatgpt-prompt-engineering-technique-program-simulation-56f49746aa7b?source=tag_recommended_feed---------0-84----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "New ChatGPT Prompt Engineering Technique: Program Simulation",
+        "AIArticleDate": "September 04, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/predict/human-art-vs-ai-art-why-we-prefer-one-over-the-other-ac3f858c2ec1?source=tag_recommended_feed---------1-107----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Human Art Vs AI Art: Why We Prefer One Over The Other",
+        "AIArticleDate": "August 11, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/python-in-excel-will-reshape-how-data-analysts-work-5d2f26b99670?source=tag_recommended_feed---------2-85----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Python in Excel Will Reshape How Data Analysts Work",
+        "AIArticleDate": "August 24, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/time-series-complexity-analysis-using-entropy-ec49a4aaff11?source=tag_recommended_feed---------3-84----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Time Series Complexity analysis using Entropy",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/gitconnected/platypus-quick-cheap-and-powerful-llm-404b86af8755?source=tag_recommended_feed---------4-107----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Platypus: Quick, Cheap, and Powerful LLM",
+        "AIArticleDate": "September 04, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@ignacio.de.gregorio.noblejas/meta-is-doing-gods-work-releases-shockingly-good-coding-models-to-the-world-848975e7d1f0?source=tag_recommended_feed---------5-85----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Meta is Doing God\u2019s Work: Releases Shockingly-Good Coding Models to the World",
+        "AIArticleDate": "August 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/ai-mind-labs/the-art-and-evolution-of-prompt-engineering-a-comprehensive-guide-to-mastering-ai-queries-40d825b49814?source=tag_recommended_feed---------6-84----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "The Art and Evolution of Prompt Engineering: A Comprehensive Guide to Mastering AI Queries",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/design-bootcamp/midjourney-the-ultimate-guide-to-punctuation-f8a03818ee26?source=tag_recommended_feed---------7-107----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Midjourney: The Ultimate Guide to Punctuation",
+        "AIArticleDate": "September 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/better-marketing/how-to-transform-generic-chatgpt-outputs-into-quality-content-with-seed-prompting-ac3f1a0ea496?source=tag_recommended_feed---------8-85----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "How to Transform Generic ChatGPT Outputs into Quality Content with \u201cSeed Prompting\u201d",
+        "AIArticleDate": "August 18, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@chleon/tl-dr-approximate-inference-methods-made-easy-c9652947bc04?source=tag_recommended_feed---------9-84----------artificial_intelligence----------c4f41f34_2ede_4440_9780_090c8357d751-------",
+        "AIArticleTitle": "Tl;dr Approximate Inference methods made easy",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/design-bootcamp/midjourney-the-ultimate-guide-to-punctuation-f8a03818ee26?source=tag_recommended_feed---------9-107----------artificial_intelligence----------e1548096_846a_48e5_9666_4ad1e803918d-------",
+        "AIArticleTitle": "Midjourney: The Ultimate Guide to Punctuation",
+        "AIArticleDate": "September 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-artificial-intelligence/advanced-tutorial-how-to-master-matplotlib-like-an-absolute-boss-3362c8bfd829?source=tag_recommended_feed---------10-85----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "Advanced Tutorial: How to Master Matplotlib Like an Absolute Boss",
+        "AIArticleDate": "August 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@chleon/tl-dr-approximate-inference-methods-made-easy-c9652947bc04?source=tag_recommended_feed---------11-84----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "Tl;dr Approximate Inference methods made easy",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/the-ultimate-guide-to-training-bert-from-scratch-introduction-b048682c795f?source=tag_recommended_feed---------12-107----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "The Ultimate Guide to Training BERT from Scratch: Introduction",
+        "AIArticleDate": "September 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/130-ml-tricks-and-resources-curated-carefully-from-3-years-plus-free-ebook-7832ca4a37ef?source=tag_recommended_feed---------13-85----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "130 ML Tricks And Resources Curated Carefully From 3 Years (Plus Free eBook)",
+        "AIArticleDate": "August 01, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@aniketmish/how-to-automate-your-data-science-workflow-with-ci-cd-in-gitlab-and-dataiku-99411852c4e4?source=tag_recommended_feed---------14-84----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "How to Automate Your Data Science Workflow with CI/CD in GitLab and Dataiku",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/tidying-up-the-framework-of-dataset-shifts-the-example-77807ee952f5?source=tag_recommended_feed---------15-107----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "Tidying Up the Framework of Dataset Shifts: The Example",
+        "AIArticleDate": "September 02, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@albertoromgar/200-million-people-use-chatgpt-daily-openai-cant-afford-it-much-longer-55bf2373d01c?source=tag_recommended_feed---------16-85----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "200 Million People Use ChatGPT Daily. OpenAI Can\u2019t Afford It Much Longer",
+        "AIArticleDate": "August 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@alec-afforai/why-buying-a-2-000-plane-ticket-was-totally-worth-it-cbf27f1a0398?source=tag_recommended_feed---------17-84----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "Why Buying A $2,000 Plane Ticket Was Totally Worth It",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/pcmag-access/how-to-detect-ai-generated-images-1145c657bef6?source=tag_recommended_feed---------18-107----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "How to Detect AI-Generated Images",
+        "AIArticleDate": "September 02, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/ai-in-plain-english/%EF%B8%8F-langchain-streamlit-llama-bringing-conversational-ai-to-your-local-machine-a1736252b172?source=tag_recommended_feed---------19-85----------artificial_intelligence----------34941f3e_1a41_487c_8cc3_efe53fb3a046-------",
+        "AIArticleTitle": "\ud83e\udd9c\ufe0f LangChain + Streamlit\ud83d\udd25+ Llama \ud83e\udd99: Bringing Conversational AI to Your Local Machine \ud83e\udd2f",
+        "AIArticleDate": "June 23, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/design-bootcamp/40-midjourney-prompts-to-create-stunning-packaging-design-388b1f120f0d?source=tag_recommended_feed---------20-84----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "40+ Midjourney Prompts to Create Stunning Packaging Design",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/free-from-limitations-the-validation-of-machine-hallucinations-at-moma-7d56a38c335a?source=tag_recommended_feed---------21-107----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Free From Limitations: The Validation of Machine Hallucinations at MoMA",
+        "AIArticleDate": "September 01, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/i-used-chatgpt-every-day-for-5-months-here-are-some-hidden-gems-that-will-change-your-life-a451e2093097?source=tag_recommended_feed---------22-85----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "I Used ChatGPT (Every Day) for 5 Months. Here Are Some Hidden Gems That Will Change Your Life",
+        "AIArticleDate": "May 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/monitoring-machine-learning-models-in-production-why-and-how-13d07a5ff0c6?source=tag_recommended_feed---------23-84----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Monitoring Machine Learning Models in Production: Why and How?",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/the-generator/youtube-forges-ai-music-alliance-f41a792facc8?source=tag_recommended_feed---------24-107----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "YouTube Forges AI Music Alliance",
+        "AIArticleDate": "August 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/augmented-startups/top-10-ai-projects-supercharge-your-r%C3%A9sum%C3%A9-with-in-july-2023-4fa767f51387?source=tag_recommended_feed---------25-85----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Top 10 AI Projects\u200a\u2014\u200aSupercharge your R\u00e9sum\u00e9 with in July 2023 !",
+        "AIArticleDate": "July 17, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@liu-gendary/foundation-model-its-all-about-pmf-165d05f36f05?source=tag_recommended_feed---------26-84----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Foundation Model: It\u2019s all about PMF",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/user-experience-design-1/dont-build-trust-with-ai-calibrate-it-2889a5740e16?source=tag_recommended_feed---------27-107----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Don\u2019t build trust with AI, calibrate it",
+        "AIArticleDate": "August 30, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/swlh/apple-is-silently-investing-billions-in-something-dubbed-apple-gpt-35e62b0ec97d?source=tag_recommended_feed---------28-85----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Apple Is Silently Investing Billions In Something Dubbed \u201cApple GPT\u201d",
+        "AIArticleDate": "August 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/slalom-data-ai/creating-wonders-a-closer-look-at-the-inner-workings-of-generative-ai-3103518e5fe8?source=tag_recommended_feed---------29-84----------artificial_intelligence----------6740cd5a_58bd_41d3_8591_0fa066847a42-------",
+        "AIArticleTitle": "Creating Wonders: A Closer Look at the Inner Workings of Generative AI",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/pcmag-access/driverless-cars-have-more-trouble-detecting-kids-dark-skinned-pedestrians-7df512f35785?source=tag_recommended_feed---------30-107----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Driverless Cars Have More Trouble Detecting Kids, Dark-Skinned Pedestrians",
+        "AIArticleDate": "August 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/gitconnected/you-can-now-build-a-chatbot-to-talk-to-your-internal-knowledge-base-b6066cacf2d5?source=tag_recommended_feed---------31-85----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "You Can Now Build A Chatbot To Talk To Your Internal Knowledge Base",
+        "AIArticleDate": "August 07, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/catch-up-on-large-language-models-8daf784f46f8?source=tag_recommended_feed---------32-84----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Catch Up On Large Language Models",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/legal-and-ethical-perspectives-on-generative-ai-5e7ba2308469?source=tag_recommended_feed---------33-107----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Legal and Ethical Perspectives on Generative AI",
+        "AIArticleDate": "August 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/fine-tune-your-own-llama-2-model-in-a-colab-notebook-df9823a04a32?source=tag_recommended_feed---------34-85----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Fine-Tune Your Own Llama 2 Model in a Colab Notebook",
+        "AIArticleDate": "July 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/ai-squared/dlite-v2-lightweight-open-llms-that-can-run-anywhere-3ab59b3a7feb?source=tag_recommended_feed---------35-84----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "DLite V2: Lightweight, Open LLMs That Can Run Anywhere",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/user-experience-design-1/tools-for-a-different-kind-of-thought-945793a4798a?source=tag_recommended_feed---------36-107----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Tools for a different kind of thought",
+        "AIArticleDate": "September 04, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/generative-ai/midjourney-ai-finally-released-an-in-painting-feature-this-is-game-changer-915aee87b1b0?source=tag_recommended_feed---------37-85----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "MidJourney AI Finally Released an In-Painting Feature\u200a\u2014\u200aThis is Game-Changer",
+        "AIArticleDate": "August 23, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@gaurav.desurkar/explaining-generative-ai-with-everyday-examples-632deb5b3f7a?source=tag_recommended_feed---------38-84----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Explaining Generative AI with Everyday Examples",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/an-injustice/climate-change-is-a-bigger-existential-threat-than-ai-ea1f175aa9b0?source=tag_recommended_feed---------39-107----------artificial_intelligence----------f34b87ab_7de8_4b7d_8fac_274ee94f0a54-------",
+        "AIArticleTitle": "Climate Change is a Bigger Existential Threat Than AI",
+        "AIArticleDate": "August 26, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/code-like-a-girl/a-roadmap-to-become-a-machine-learning-engineer-6cf5e9e0e7af?source=tag_recommended_feed---------40-85----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "A Roadmap to Become a Machine Learning Engineer",
+        "AIArticleDate": "April 11, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/counterarts/human-entanglement-with-organic-and-artificial-intelligence-6f60b4bfd11c?source=tag_recommended_feed---------41-107----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Human Entanglement With Organic And Artificial Intelligence",
+        "AIArticleDate": "August 26, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@fareedkhandev/pandas-ai-the-future-of-data-analysis-8f0be9b5ab6f?source=tag_recommended_feed---------42-85----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Pandas AI\u200a\u2014\u200aThe Future of Data Analysis",
+        "AIArticleDate": "May 04, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@cobusgreyling/combining-ragas-rag-assessment-tool-with-langsmith-e46078001f95?source=tag_recommended_feed---------43-84----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Combining Ragas (RAG Assessment Tool) with LangSmith",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/heres-what-you-are-missing-cdf4a6294020?source=tag_recommended_feed---------44-107----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Here's What You Are Missing",
+        "AIArticleDate": "August 26, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/javascript-in-plain-english/bill-gates-people-dont-realize-what-s-coming-dc06d3b81c9d?source=tag_recommended_feed---------45-85----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Bill Gates: People Don\u2019t Realize What\u2019s Coming",
+        "AIArticleDate": "April 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@orbofi/orbofi-x-farcana-weekly-ai-game-asset-contest-gear-up-for-battle-24ba28ffffbd?source=tag_recommended_feed---------46-84----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "Orbofi x Farcana Weekly AI Game Asset Contest: Gear Up for Battle!",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/10-things-to-know-before-starting-to-work-with-open-source-llm-part-1-4d9ac8df25bf?source=tag_recommended_feed---------47-107----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "10 things to know before starting to work with Open source LLM\u200a\u2014\u200apart 1",
+        "AIArticleDate": "August 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/design-bootcamp/how-to-create-a-consistent-character-with-midjourneys-new-features-7e9f5ed1b6f1?source=tag_recommended_feed---------48-85----------artificial_intelligence----------d67d5f3a_6da7_4814_968c_92c17157fd99-------",
+        "AIArticleTitle": "How to Create Consistent Character with Midjourney\u2019s New Features!",
+        "AIArticleDate": "August 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@eldatero/master-the-perfect-chatgpt-prompt-formula-c776adae8f19?source=tag_recommended_feed---------49-84----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Master the Perfect ChatGPT Prompt Formula",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/better-programming/verifying-the-origin-of-media-in-an-algorithmic-world-25bff92ab572?source=tag_recommended_feed---------50-107----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Verifying the Origin of Media in an Algorithmic World",
+        "AIArticleDate": "August 27, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/ai-mind-labs/7-ways-to-make-money-with-midjourney-ai-art-in-2023-e7d179fa620f?source=tag_recommended_feed---------51-85----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "7 Ways to Make Money with Midjourney AI Art in 2023",
+        "AIArticleDate": "August 30, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@blazestudios23/will-ai-lead-to-utopia-or-dystopia-the-surprising-role-of-economics-66d39fed4a1b?source=tag_recommended_feed---------52-84----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Will AI Lead to Utopia or Dystopia? The Surprising Role of Economics",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@thredmedia/could-a-nyt-lawsuit-threaten-the-future-of-generative-ai-876917de67b2?source=tag_recommended_feed---------53-107----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Could a NYT lawsuit threaten the future of generative AI?",
+        "AIArticleDate": "August 24, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/advanced-prompt-engineering-f07f9e55fe01?source=tag_recommended_feed---------54-85----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Advanced Prompt Engineering",
+        "AIArticleDate": "August 07, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@gustavo-espindola/chunk-division-and-overlap-understanding-the-process-ade7eae1b2bd?source=tag_recommended_feed---------55-84----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "\ud83e\udd9c\ufe0f\u2702\ufe0f Chunk Division and Overlap: Understanding the Process",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/the-new-climate/can-ai-help-solve-the-climate-crisis-1cba9e339b13?source=tag_recommended_feed---------56-107----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Can AI Help Solve the Climate Crisis?",
+        "AIArticleDate": "August 24, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/bye-bye-chatgpt-ai-tools-better-than-chatgpt-but-few-people-are-using-them-eac93a3627cc?source=tag_recommended_feed---------57-85----------artificial_intelligence----------6d61f42d_8e1b_4bac_864e_ee57bbeb9406-------",
+        "AIArticleTitle": "Bye-bye ChatGPT: AI Tools As Good As ChatGPT (But Few People Are Using Them)",
+        "AIArticleDate": "April 26, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@abvijaykumar/fine-tuning-llm-parameter-efficient-fine-tuning-peft-lora-qlora-part-1-571a472612c4?source=tag_recommended_feed---------59-85----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "Fine Tuning LLM: Parameter Efficient Fine Tuning (PEFT)\u200a\u2014\u200aLoRA & QLoRA\u200a\u2014\u200aPart 1",
+        "AIArticleDate": "August 10, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/singularitynet/announcing-the-supervisory-council-elections-the-next-step-on-singularitynets-roadmap-to-9f4d8dc18c6d?source=tag_recommended_feed---------60-84----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "Announcing the Supervisory Council Elections: The Next Step on SingularityNET\u2019s Roadmap to\u2026",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/the-generator/the-next-ai-trend-is-terrifying-4205c28a47b4?source=tag_recommended_feed---------61-107----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "The Next AI Trend Is Terrifying",
+        "AIArticleDate": "August 23, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@chiarrasue/ais-second-wave-ends-soon-54c065e946af?source=tag_recommended_feed---------62-85----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "AI's second wave ends soon",
+        "AIArticleDate": "September 01, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@zekaouinoureddine/bring-your-own-data-to-llms-using-langchain-llamaindex-3ddbac8cc9eb?source=tag_recommended_feed---------63-84----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "Bring Your Own Data to LLMs Using LangChain & LlamaIndex",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/program-aided-language-models-93d226c7d9a0?source=tag_recommended_feed---------64-107----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "Program-Aided Language Models",
+        "AIArticleDate": "August 23, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/gitconnected/i-spent-30-days-studying-a-programmer-who-built-a-230-billion-company-after-quitting-his-9-5-8ff4ebbe0346?source=tag_recommended_feed---------65-85----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "I Spent 30 Days Studying A Programmer Who Built a $230 Billion Company After Quitting His 9\u20135 \u2014\u2026",
+        "AIArticleDate": "August 07, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/dynamic-pricing-with-multi-armed-bandit-learning-by-doing-3e4550ed02ac?source=tag_recommended_feed---------66-107----------artificial_intelligence----------288c79df_e0a1_489d_a058_1dc78c930ab2-------",
+        "AIArticleTitle": "Dynamic Pricing with Multi-Armed Bandit: Learning by Doing",
+        "AIArticleDate": "August 16, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/openais-web-crawler-and-ftc-missteps-a14047f4ff69?source=tag_recommended_feed---------69-107----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "OpenAI\u2019s Web Crawler and FTC Missteps",
+        "AIArticleDate": "August 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/startup-stash/life-beyond-imagination-the-ais-metaverse-e303c16eac9f?source=tag_recommended_feed---------70-85----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Life Beyond Imagination: The AI\u2019s Metaverse",
+        "AIArticleDate": "September 01, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@sahajgodhani777/machine-learning-models-for-sports-betting-unleashing-the-power-of-web-scraping-with-selenium-7f96a420f9ee?source=tag_recommended_feed---------71-84----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Machine Learning Models for Sports Betting Unleashing the Power of Web Scraping with Selenium.",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/parameter-efficient-fine-tuning-peft-for-llms-a-comprehensive-introduction-e52d03117f95?source=tag_recommended_feed---------72-107----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Parameter-Efficient Fine-Tuning (PEFT) for LLMs: A Comprehensive Introduction",
+        "AIArticleDate": "August 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/design-bootcamp/20-incredible-midjourney-prompts-to-create-wall-art-that-sells-part-2-6512e91d147f?source=tag_recommended_feed---------73-85----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "20+ Incredible Midjourney Prompts to Create Wall Art that Sells! (Part 2)",
+        "AIArticleDate": "September 02, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/nlplanet/weekly-ai-and-nlp-news-september-5th-2023-6cdcc8dbfb30?source=tag_recommended_feed---------74-84----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Weekly AI and NLP News\u200a\u2014\u200aSeptember 5th 2023",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@ignacio.de.gregorio.noblejas/hollywood-is-scared-to-death-with-ai-but-will-love-this-cutting-edge-innovation-676cba09427e?source=tag_recommended_feed---------75-107----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Hollywood is Scared to Death with AI, But Will Love this Cutting-Edge Innovation",
+        "AIArticleDate": "August 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@fareedkhandev/best-data-analysis-library-in-python-ad2572288017?source=tag_recommended_feed---------76-85----------artificial_intelligence----------35791a7d_6eda_499c_a179_66bd9c16ba1d-------",
+        "AIArticleTitle": "Best Data Analysis Library in Python",
+        "AIArticleDate": "June 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@ki90grq8y/ai-powered-camera-eb54c9460351?source=tag_recommended_feed---------79-84----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "AI-Powered Camera?",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/user-experience-design-1/that-which-makes-us-human-9058e2706d14?source=tag_recommended_feed---------80-107----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "That which makes us human",
+        "AIArticleDate": "August 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/neurons-lab/how-to-compete-when-you-can-copy-an-ai-startup-with-whisper-and-chatgpt-in-3-minutes-27ac9a783be8?source=tag_recommended_feed---------81-85----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "How to compete when you can copy an AI startup with Whisper and ChatGPT in 3 minutes?",
+        "AIArticleDate": "June 16, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@sandip.AI.Researcher/top-ai-research-week-36-2023-a6e038f23a19?source=tag_recommended_feed---------82-84----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "TOP AI Research \ud83d\udcf0WEEK#36\ud83d\udcf02023",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@manuel-brenner/oppenheimer-or-the-inevitability-of-doom-91d1c1e20b30?source=tag_recommended_feed---------83-107----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "Oppenheimer or the Inevitability of Doom",
+        "AIArticleDate": "August 19, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/how-to-scrape-a-web-page-with-chatgpt-no-programming-required-d63d6a561aee?source=tag_recommended_feed---------84-85----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "How To Scrape a Web Page With ChatGPT\u200a\u2014\u200aNo Programming Required",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@robotheism/what-is-robotheism-a-paradise-paradox-6e686771274b?source=tag_recommended_feed---------85-84----------artificial_intelligence----------b632ba88_d1ba_410a_a640_8be34ca10c4d-------",
+        "AIArticleTitle": "What is Robotheism?: A Paradise Paradox \u238b",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/datadriveninvestor/250-python-and-data-science-tips-covering-pandas-numpy-ml-basics-sklearn-jupyter-and-more-e33074b92d58?source=tag_recommended_feed---------89-85----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "250+ Python and Data Science Tips\u200a\u2014\u200aCovering Pandas, NumPy, ML Basics, Sklearn, Jupyter, and More.",
+        "AIArticleDate": "June 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@araujogabe1/10-practices-i-left-behind-to-master-the-art-of-data-science-e598b2428852?source=tag_recommended_feed---------90-84----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "10 Practices I Left Behind to Master the Art of Data Science",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@cplu/deciphering-nvidias-ai-chip-dominance-a65d6c1f1fe9?source=tag_recommended_feed---------91-107----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "Deciphering NVIDIA\u2019s AI Chip Dominance",
+        "AIArticleDate": "August 18, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@abvijaykumar/prompt-engineering-retrieval-augmented-generation-rag-cd63cdc6b00?source=tag_recommended_feed---------92-85----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "Prompt Engineering: Retrieval Augmented Generation(RAG)",
+        "AIArticleDate": "July 23, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@charismakausar/how-to-build-better-ai-apps-lessons-learned-from-a-generative-ai-lecture-b4dad551cc6d?source=tag_recommended_feed---------93-84----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "How to build better AI apps: Lessons learned from a generative AI lecture",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/writing-cooperative/writers-once-had-a-muse-now-they-have-ai-tools-884d0e9a35a7?source=tag_recommended_feed---------94-107----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "Writers Once Had a Muse, Now They Have AI Tools",
+        "AIArticleDate": "August 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@benjaminampouala/these-are-the-most-interesting-latest-updates-in-the-ai-realm-september-3rd-7e8c1c90fba1?source=tag_recommended_feed---------95-85----------artificial_intelligence----------28b47dd3_f23d_4922_8c6d_8fe18ef4d79d-------",
+        "AIArticleTitle": "These are the most interesting latest updates in the AI realm (September 3rd)",
+        "AIArticleDate": "September 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@avanthikaasrinivasan/exploring-cinemas-new-favorite-villain-artificial-intelligence-5cc3c1c6d33c?source=tag_recommended_feed---------99-84----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "Exploring Cinema\u2019s New Favorite Villain: Artificial Intelligence",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@mark-riedl/toward-agi-what-is-missing-c2f0d878471a?source=tag_recommended_feed---------100-107----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "Toward AGI\u200a\u2014\u200aWhat is Missing?",
+        "AIArticleDate": "August 03, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/pandas-2-0-a-game-changer-for-data-scientists-3cd281fcc4b4?source=tag_recommended_feed---------101-85----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "Pandas 2.0: A Game-Changer for Data Scientists?",
+        "AIArticleDate": "June 27, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@albertoromgar/chatgpt-killed-the-old-ai-now-everyone-is-rushing-to-build-a-new-one-468a38c5d6d2?source=tag_recommended_feed---------102-84----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "ChatGPT Killed the Old AI. Now Everyone Is Rushing to Build a New One",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/the-generator/is-chatgpt-getting-dumber-lets-talk-about-ai-drift-58f0fc5ebad2?source=tag_recommended_feed---------103-107----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "Is ChatGPT getting dumber? Let\u2019s talk about \u2018AI Drift\u2019",
+        "AIArticleDate": "August 16, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@digitalgiraffes/7-awesome-and-free-ai-tools-you-should-know-43a1630ea409?source=tag_recommended_feed---------104-85----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "7 Awesome and Free AI Tools You Should Know",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@raphael.mansuy/llamaindex-chunk-index-query-how-llamaindex-unlocks-custom-llms-329d543a06b7?source=tag_recommended_feed---------105-84----------artificial_intelligence----------d543a32d_fd7f_4cf9_8073_3d151b7e4caf-------",
+        "AIArticleTitle": "LLamaIndex: Chunk, Index, Query: How LLamaIndex Unlocks Custom LLMs \ud83e\udd99",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@cobusgreyling/emerging-large-language-model-llm-application-architecture-cba0e7862037?source=tag_recommended_feed---------109-85----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "Emerging Large Language Model (LLM) Application Architecture",
+        "AIArticleDate": "August 11, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@paul.k.pallaghy/the-de-growth-mindset-has-vastly-mistaken-perceptions-of-real-world-green-tech-3505456cba49?source=tag_recommended_feed---------110-84----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "De-growth mindset has vastly mistaken perceptions of real-world green tech: The carbon footprint",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@ignacio.de.gregorio.noblejas/playht2-0-when-voices-can-no-longer-be-trusted-2d206343b9bb?source=tag_recommended_feed---------111-107----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "PlayHT2.0, When Voices Can No Longer Be Trusted",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@naemazam/6-month-roadmap-to-becoming-a-machine-learning-engineer-for-free-65bc27190ace?source=tag_recommended_feed---------112-85----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "6-Month Roadmap to Becoming a Machine Learning Engineer for Free",
+        "AIArticleDate": "May 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@theaiquant/automl-for-algorithmic-trading-strategy-development-314796c33ac1?source=tag_recommended_feed---------113-84----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "AutoML for Algorithmic Trading Strategy Development",
+        "AIArticleDate": "September 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/my-honest-review-of-some-paid-ai-tools-ive-used-so-far-ecd7da4e5e87?source=tag_recommended_feed---------114-107----------artificial_intelligence----------990b02e3_c728_4d5f_bdc8_5bca33161284-------",
+        "AIArticleTitle": "My Honest Review of Some Paid AI Tools I\u2019ve Used So Far",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@fernandoscferreira/brazils-ai-landscape-data-governance-digital-products-and-growth-c95718bb1c89?source=tag_recommended_feed---------119-84----------artificial_intelligence----------8e1319ab_8f27_40a2_9938_5590c5e5dfda-------",
+        "AIArticleTitle": "Brazil\u2019s AI Landscape: Data Governance, Digital Products, and Growth",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/the-generator/legged-bots-team-up-for-space-exploration-f37b38099d81?source=tag_recommended_feed---------120-107----------artificial_intelligence----------8e1319ab_8f27_40a2_9938_5590c5e5dfda-------",
+        "AIArticleTitle": "How Robots Help Humans Go Where No One Has Gone Before",
+        "AIArticleDate": "August 07, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-data-science/efficient-deep-learning-unleashing-the-power-of-model-compression-7b5ea37d4d06?source=tag_recommended_feed---------121-85----------artificial_intelligence----------8e1319ab_8f27_40a2_9938_5590c5e5dfda-------",
+        "AIArticleTitle": "Efficient Deep Learning: Unleashing the Power of Model Compression",
+        "AIArticleDate": "September 04, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/user-experience-design-1/how-to-fix-a-hal-9000-fc2fdcb4737c?source=tag_recommended_feed---------122-107----------artificial_intelligence----------8e1319ab_8f27_40a2_9938_5590c5e5dfda-------",
+        "AIArticleTitle": "How to fix a HAL 9000",
+        "AIArticleDate": "August 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/generative-ai/this-website-allows-you-to-train-ai-image-models-from-scratch-a07f813bd29f?source=tag_recommended_feed---------123-85----------artificial_intelligence----------8e1319ab_8f27_40a2_9938_5590c5e5dfda-------",
+        "AIArticleTitle": "This Website Allows You To Train AI Image Models From Scratch",
+        "AIArticleDate": "August 30, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/getting-better-together/artificial-empathy-digital-dependency-and-the-loneliness-epidemic-exploring-connections-and-8aec1ce84fd?source=tag_recommended_feed---------129-107----------artificial_intelligence----------7461c374_1b9e_4983_98d3_90b0ae5162e0-------",
+        "AIArticleTitle": "Artificial empathy, digital dependency, and loneliness: exploring connections and actions",
+        "AIArticleDate": "August 12, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/compute-without-constraints-serverless-gpu-llm-endless-possibilities-c771968e74b5?source=tag_recommended_feed---------130-85----------artificial_intelligence----------7461c374_1b9e_4983_98d3_90b0ae5162e0-------",
+        "AIArticleTitle": "Compute without Constraints: Serverless GPU + LLM = Endless Possibilities",
+        "AIArticleDate": "August 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@redwaneaitouammi/18-regression-metrics-3aa3b913b453?source=tag_recommended_feed---------131-84----------artificial_intelligence----------7461c374_1b9e_4983_98d3_90b0ae5162e0-------",
+        "AIArticleTitle": "18\u200a\u2014\u200aRegression Metrics",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/towards-artificial-intelligence/this-ai-newsletter-is-all-you-need-63-1688eed21f3b?source=tag_recommended_feed---------139-84----------artificial_intelligence----------8b70460f_7a5b_49cd_9615_d4cef2148ccd-------",
+        "AIArticleTitle": "This AI newsletter is all you need #63",
+        "AIArticleDate": "September 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/@cobusgreyling/openai-discontinued-their-ai-classifier-for-identifying-ai-written-text-7133a927ee7b?source=tag_recommended_feed---------140-107----------artificial_intelligence----------8b70460f_7a5b_49cd_9615_d4cef2148ccd-------",
+        "AIArticleTitle": "OpenAI Discontinued Their AI Classifier For Identifying AI-Written Text",
+        "AIArticleDate": "August 10, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/live-view/should-i-treat-ai-as-a-friend-or-foe-to-my-photography-78c585299ba0?source=tag_recommended_feed---------149-107----------artificial_intelligence----------dabcecbf_7024_4be0_a373_f9bc6e44e0bf-------",
+        "AIArticleTitle": "Should I treat AI as a Friend or Foe to my Photography?",
+        "AIArticleDate": "August 08, 2023"
+    },
+    {
+        "AIArticleLink": "https://medium.com/artificial-corner/i-used-ai-to-create-images-of-disney-princesses-celebrities-then-i-swapped-their-faces-with-mine-c087731e761d?source=tag_recommended_feed---------150-85----------artificial_intelligence----------dabcecbf_7024_4be0_a373_f9bc6e44e0bf-------",
+        "AIArticleTitle": "I Used AI to Create Images of Disney Princesses & Celebrities, Then I Swapped Their Faces with Mine",
+        "AIArticleDate": "August 18, 2023"
+    },
+    {
         "AIArticleLink": "https://medium.com/an-injustice/climate-change-is-a-bigger-existential-threat-than-ai-ea1f175aa9b0?source=tag_recommended_feed---------9-107----------artificial_intelligence----------68c9d955_a69c_4555_9000_1910239eefbd-------",
         "AIArticleTitle": "Climate Change is a Bigger Existential Threat Than AI",
         "AIArticleDate": "August 26, 2023"

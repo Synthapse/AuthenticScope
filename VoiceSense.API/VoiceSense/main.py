@@ -183,5 +183,3 @@ async def upload(
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, exc):
     return JSONResponse(content={"error": "Validation error: " + str(exc)}, status_code=400)
-
-

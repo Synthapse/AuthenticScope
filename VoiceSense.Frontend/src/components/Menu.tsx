@@ -26,7 +26,7 @@ const MenuContainer = styled.div`
         height: 60px;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: initial;
         bottom: 0;
         top: auto;
         position: fixed;

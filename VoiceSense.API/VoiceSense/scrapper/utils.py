@@ -113,6 +113,11 @@ def convert_article_date(article_date):
                 date = date.replace(year=datetime.now().year)
         
         formatted_date = date.strftime("%B %d, %Y")
+
+        if formatted_date is None or formatted_date == "": 
+            today_date = datetime.now().strftime("%B %d, %Y")
+            formatted_date = today_date
+
         return formatted_date
     except Exception as e:
         print("Error parsing date:", e)

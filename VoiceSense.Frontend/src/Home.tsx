@@ -5,24 +5,31 @@ import styled from "styled-components";
 import { devices } from "./utils";
 
 
-const Header = styled.h1`
+const HomeContainer = styled.div`
+    padding-top: 20px;
+    @media ${devices.laptopL} {
+        padding-top: 20%;
+      }
+    `
 
-    font-size:38px;
+const Header = styled.h1`
+    font-size:42px;
     max-width:50%;
     @media ${devices.laptopL} {
         font-size: 48px;
       }
 `
 
-const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     position: absolute;
-    bottom: 20%;
-    width: 100%;
+    bottom: 1%;
+    width: calc(100% - 40px);
 
     > button {
-        width: calc(100% - 40px)
+        width: 100%;
+        height:60px;
     }
 
     @media ${devices.laptopL} {
@@ -37,10 +44,13 @@ const ButtonContainer = styled.div`
 
 
 const Paragraph = styled.p`
-    font-size: 16px;
+    font-size: 24px;
     max-width: 100%;
+    bottom: 20%;
+    margin-top: 60%;
     @media ${devices.laptopL} {
-        font-size: 14px;
+        margin-top: 0%;
+        font-size: 18px;
         max-width: 50%;
         }
 `
@@ -48,7 +58,7 @@ const Paragraph = styled.p`
 const Home = () => {
 
     return (
-        <div style={{ paddingTop: '20%' }}>
+        <HomeContainer>
             <Header><b>VoiceSense</b>     <TypeAnimation
                 sequence={[
                     // Same substring at the start will only be typed out once, initially
@@ -75,7 +85,7 @@ const Home = () => {
                     Try conversations
                 </Button>
             </Link> */}
-        </div>
+        </HomeContainer>
     )
 }
 

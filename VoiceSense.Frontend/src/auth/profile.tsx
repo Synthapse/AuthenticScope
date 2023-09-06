@@ -1,9 +1,7 @@
 import { signOut } from "firebase/auth";
-import { IHistoryEvent, auth, readHistoryData } from "./firebase";
+import { auth } from "./firebase";
 import { Button } from "shards-react";
-import { HoverDiv } from "../ArticleList";
 import { useNavigate } from 'react-router-dom';
-import { IoIosReturnLeft } from "react-icons/io";
 
 import Menu from "../components/Menu";
 
@@ -14,6 +12,7 @@ export const Profile = () => {
     const logOut = async () => {
         try {
             await signOut(auth);
+            navigate('/');
         } catch (err) {
             console.error(err);
         }

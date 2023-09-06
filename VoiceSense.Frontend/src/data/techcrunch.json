@@ -1,5 +1,90 @@
 [
     {
+        "AIArticleLink": "https://techcrunch.com/2023/09/06/simpleclosure-raises-1-5m-to-companies-shut-down-faster-and-cheaper/",
+        "AIArticleTitle": "SimpleClosure raises $1.5M in less than 24 hours to help companies shut down faster and cheaper",
+        "AIArticleDate": "2:00 PM GMT+2\u2022September 6, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/06/intuit-assist-generative-ai-assistant/",
+        "AIArticleTitle": "Intuit launches generative AI\u2013powered digital assistant for small businesses and consumers",
+        "AIArticleDate": "2:00 PM GMT+2\u2022September 6, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/prosecutors-in-every-state-push-to-combat-ai-child-exploitation/",
+        "AIArticleTitle": "Prosecutors in every state push to combat AI child exploitation",
+        "AIArticleDate": "12:14 AM GMT+2\u2022September 6, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/major-ai-players-are-getting-in-sync-but-its-what-comes-next-that-really-matters/",
+        "AIArticleTitle": "Major AI players are getting in sync, but it\u2019s what comes next that really matters",
+        "AIArticleDate": "7:30 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/robot-software-firm-mujin-raises-85m/",
+        "AIArticleTitle": "Robot software firm Mujin raises $85M",
+        "AIArticleDate": "5:00 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/sam-altman-backed-startup-aims-to-match-neurodivergent-jobseekers-with-ideal-jobs/",
+        "AIArticleTitle": "Sam Altman-backed Mentra aims to match neurodivergent jobseekers with ideal jobs",
+        "AIArticleDate": "4:34 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/arms-ipo-targets-51b-valuation-wont-resurrect-private-market-liquidity/",
+        "AIArticleTitle": "Arm\u2019s IPO targets $51B valuation, won\u2019t resurrect private-market liquidity",
+        "AIArticleDate": "4:18 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/artisse-can-generate-ai-photos-of-you-from-prompts-templates-or-even-a-reference-pic/",
+        "AIArticleTitle": "Artisse can generate AI photos of you from prompts, templates or even a reference pic",
+        "AIArticleDate": "4:18 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/arms-latest-ipo-filing-eyes-potential-52b-valuation/",
+        "AIArticleTitle": "Arm\u2019s latest IPO filing eyes potential $52B valuation",
+        "AIArticleDate": "3:20 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/zoom-rebrands-existing-and-intros-new-generative-ai-features/",
+        "AIArticleTitle": "Zoom rebrands existing \u2014 and intros new \u2014 generative AI features",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/gleens-tech-savvy-chatbot-for-discord-and-slack-attracts-solana-founder-in-oversubscribed-round/",
+        "AIArticleTitle": "Gleen\u2019s tech-savvy chatbot for Discord and Slack attracts Solana founder in oversubscribed round",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/05/autonomous-driving-darling-deeproute-ai-sets-sight-on-europe-carmakers/",
+        "AIArticleTitle": "Alibaba-backed autonomous driving darling Deeproute sets sight on Europe carmakers",
+        "AIArticleDate": "2:19 PM GMT+2\u2022September 5, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/04/are-language-models-doomed-to-always-hallucinate/",
+        "AIArticleTitle": "Are AI models doomed to always hallucinate?",
+        "AIArticleDate": "3:30 PM GMT+2\u2022September 4, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/01/could-ai-be-the-spark-that-ends-the-opioid-epidemic/",
+        "AIArticleTitle": "Could AI be the spark that ends the opioid epidemic?",
+        "AIArticleDate": "8:00 PM GMT+2\u2022September 1, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/01/xs-privacy-policy-confirms-it-will-use-public-data-to-train-ai-models/",
+        "AIArticleTitle": "X\u2019s privacy policy confirms it will use public data to train AI models",
+        "AIArticleDate": "7:34 PM GMT+2\u2022September 1, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/01/questions-for-enterprise-buyers-evaluating-generative-ai/",
+        "AIArticleTitle": "How to buy an AI solution the right way: 7 questions new customers should consider",
+        "AIArticleDate": "7:01 PM GMT+2\u2022September 1, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/01/whats-the-opposite-of-a-lean-startup/",
+        "AIArticleTitle": "What\u2019s the opposite of a lean startup?",
+        "AIArticleDate": "4:05 PM GMT+2\u2022September 1, 2023"
+    },
+    {
         "AIArticleLink": "https://techcrunch.com/2023/08/31/openai-angles-to-put-chatgpt-in-classrooms-with-special-tutor-prompts/",
         "AIArticleTitle": "OpenAI angles to put ChatGPT in classrooms with special tutor prompts",
         "AIArticleDate": "7:48 PM GMT+2\u2022August 31, 2023"
