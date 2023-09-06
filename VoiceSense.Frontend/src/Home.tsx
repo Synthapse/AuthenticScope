@@ -47,7 +47,6 @@ const Paragraph = styled.p`
     font-size: 24px;
     max-width: 100%;
     bottom: 20%;
-    margin-top: 60%;
     @media ${devices.laptopL} {
         margin-top: 0%;
         font-size: 18px;
