@@ -4,7 +4,7 @@ import { CgProfile } from 'react-icons/cg';
 import { PiArticle } from 'react-icons/pi';
 import { GoHistory } from 'react-icons/go';
 import styled, { ThemeContext } from 'styled-components';
-import { lightTheme } from '..';
+import { lightTheme } from '../App';
 
 
 

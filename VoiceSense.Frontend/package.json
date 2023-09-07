@@ -4,6 +4,7 @@
   "homepage": "/voicesense",
   "private": true,
   "dependencies": {
+    "@cfaester/enzyme-adapter-react-18": "^0.7.1",
     "@firebase/firestore": "^4.1.0",
     "@hotjar/browser": "^1.0.9",
     "@stripe/react-stripe-js": "^2.1.1",
@@ -16,7 +17,9 @@
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "axios": "^1.4.0",
+    "enzyme": "^3.11.0",
     "firebase": "^10.1.0",
+    "jest-canvas-mock": "^2.5.2",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -35,7 +38,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -55,5 +58,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!variables/.*)"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
