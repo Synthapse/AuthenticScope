@@ -3,14 +3,6 @@ import { ImSun } from "react-icons/im";
 import { App } from "./App";
 import { mount, configure, shallow } from 'enzyme'
 import Adapter from '@cfaester/enzyme-adapter-react-18';
-import React, { useEffect } from "react";
-import { act, fireEvent, render } from "@testing-library/react";
-import { HashRouter, Route, Routes } from "react-router-dom";
-import axios from "axios";
-import SummarizationArticle from "./SummarizationArticle";
-import { Profile } from "./auth/profile";
-import { ThemeProvider } from "styled-components";
-
 configure({adapter: new Adapter()});
 
 describe('App', () => {
