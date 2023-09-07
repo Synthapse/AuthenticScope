@@ -69,5 +69,8 @@
     "moduleNameMapper": {
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.13"
   }
 }
