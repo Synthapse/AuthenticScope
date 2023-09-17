@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { FormSelect, Tooltip } from "shards-react";
 import { Dna } from 'react-loader-spinner'
 import styled from "styled-components";
@@ -15,6 +15,7 @@ import LazyArticleLoader from "./LazyArticleList";
 import { BsCardChecklist, BsListUl } from "react-icons/bs";
 
 import Menu from "./components/Menu";
+import Search from "./components/Search";
 interface ISelect {
     options: string[];
     setState: (value: string) => void;
@@ -221,7 +222,7 @@ const ArticleList = () => {
         return filterTimePeriod;
     }
 
-    const filteredArticles = techCrunchArticlesArchive.filter((item: AIArticle) =>
+    let filteredArticles = techCrunchArticlesArchive.filter((item: AIArticle) =>
         activeFilters.some((filter) => item.AIArticleDate.includes(filter))
     ).concat(deepmindArticlesArchive.filter((item: AIArticle) =>
         activeFilters.some((filter) => item.AIArticleDate.includes(filter))
@@ -239,6 +240,19 @@ const ArticleList = () => {
 
     const [isList, setIsList] = useState<boolean>(true)
     const [tooltipOpen, setTooltipOpen] = useState<boolean>(false);
+    const [searchTerm, setSearchTerm] = useState('')
+
+    const filterExercises = (event: { target: { value: SetStateAction<string>; }; }) => {
+        setSearchTerm(event.target.value)
+    }
+
+
+
+    filteredArticles = !searchTerm
+        ? filteredArticles
+        : filteredArticles.filter((article: AIArticle) =>
+            article.AIArticleTitle.toLowerCase().includes(searchTerm.toLocaleLowerCase())
+        )
 
 
 
@@ -266,6 +280,14 @@ const ArticleList = () => {
                     ).length} Medium articles<br />
 
                 </Tooltip>
+
+
+                <Search
+                    callBack={filterExercises}
+                    placeholder={"🔍 What's information you need?"}
+                />
+
+
                 <ScrollingFilters>
                     <Filters>
                         <div style={{ display: 'flex' }}>
@@ -306,6 +328,7 @@ const ArticleList = () => {
     </div >
     )
 }
+
 
 
 
