@@ -64,3 +64,12 @@ export const getTimePeriodFilters = () => {
 
     return timePeriodFilters;
 };
+
+export const getCurrentMonthName = () => {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November"];
+
+    const today = new Date();
+    const currentMonth = today.getMonth();
+    return monthNames[currentMonth];
+}

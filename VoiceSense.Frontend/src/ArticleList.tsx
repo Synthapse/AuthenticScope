@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import { IoIosReturnLeft } from "react-icons/io";
 
-import { devices, getTimePeriodFilters, parseDate, parseDateTime, parseTodayToDate, parseYesterdayToDate } from "./utils";
+import { devices, getCurrentMonthName, getTimePeriodFilters, parseDate, parseDateTime, parseTodayToDate, parseYesterdayToDate } from "./utils";
 import techCrunchArticlesArchive from './data/techcrunch.json';
 import nyTimesArticlesArchive from './data/nytimes.json';
 import deepmindArticlesArchive from './data/deepmind.json';
@@ -135,8 +135,10 @@ const ArticleList = () => {
 
     const timePeriodFilters = getTimePeriodFilters();
 
-    //const [activeFilters, setActiveFilters] = useState<string[]>([getTimePeriodFilters()[0]]);
-    const [activeFilters, setActiveFilters] = useState<string[]>([parseTodayToDate()]);
+
+    //17.10.2023 - active filters for entire month not today -> cause scrappers not automated to work everyday. 
+    //Automate scrappers to work everyday and then change to today
+    const [activeFilters, setActiveFilters] = useState<string[]>([getCurrentMonthName()]);
 
     const filterData = (filter: string) => {
         // Check if the filter is already present in activeFilters

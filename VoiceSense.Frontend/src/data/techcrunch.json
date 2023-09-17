@@ -1,5 +1,90 @@
 [
     {
+        "AIArticleLink": "https://techcrunch.com/2023/09/15/superorder-raises-10m-to-help-restaurants-maintain-their-online-presence/",
+        "AIArticleTitle": "Superorder raises $10M to help restaurants maintain their online presence",
+        "AIArticleDate": "9:00 PM GMT+2\u2022September 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/15/answering-ais-biggest-questions-requires-an-interdisciplinary-approach/",
+        "AIArticleTitle": "Answering AI\u2019s biggest questions requires an interdisciplinary approach",
+        "AIArticleDate": "7:38 PM GMT+2\u2022September 15, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/microsoft-open-sources-evodiff-a-novel-protein-generating-ai/",
+        "AIArticleTitle": "Microsoft open sources EvoDiff, a novel protein-generating AI",
+        "AIArticleDate": "7:47 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/arm-after-the-ipo/",
+        "AIArticleTitle": "Arm after the IPO",
+        "AIArticleDate": "7:30 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/lastmile-ai-closes-10m-seed-round-to-operationalize-ai-models/",
+        "AIArticleTitle": "LastMile AI closes $10M seed round to \u2018operationalize\u2019 AI models",
+        "AIArticleDate": "4:00 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/defence-ai-startup-helsing-breaks-the-record-for-european-ai-raising-a-223m-series-b/",
+        "AIArticleTitle": "Defense AI startup Helsing breaks the record for European AI, raising a $223M Series B",
+        "AIArticleDate": "3:06 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/pixis-an-ai-powered-full-stack-marketing-platform-raises-85m/",
+        "AIArticleTitle": "Pixis, an AI-powered full-stack marketing platform, raises $85M",
+        "AIArticleDate": "3:05 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/patronus-ai-conjures-up-an-llm-evaluation-tool-for-regulated-industries/",
+        "AIArticleTitle": "Patronus AI conjures up an LLM evaluation tool for regulated industries",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/databricks-raises-500m-more-boosting-valuation-to-43b-despite-late-stage-gloom/",
+        "AIArticleTitle": "Databricks raises $500M more, boosting valuation to $43B despite late-stage gloom",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/14/openai-dublin-eu-regulation/",
+        "AIArticleTitle": "OpenAI to open its first EU office as it readies for regulatory hurdles",
+        "AIArticleDate": "1:45 PM GMT+2\u2022September 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/eu-supercomputers-for-ai/",
+        "AIArticleTitle": "EU to let \u2018responsible\u2019 AI startups train models on its supercomputers",
+        "AIArticleDate": "7:24 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/treefera-2m-pre-seed-round-carbon-credits/",
+        "AIArticleTitle": "Treefera raises $2.2M to solve the carbon credits credibility problem with AI",
+        "AIArticleDate": "6:00 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/personalized-news-ap-artifact-becomes-a-discovery-engine-for-the-web-with-new-links-feature/",
+        "AIArticleTitle": "Personalized news app Artifact becomes a discovery engine for the web with new Links feature",
+        "AIArticleDate": "5:51 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/amazon-debuts-generative-ai-tools-that-helps-sellers-write-product-descriptions/",
+        "AIArticleTitle": "Amazon debuts generative AI tools that helps sellers write product descriptions",
+        "AIArticleDate": "3:43 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/adobes-firefly-generative-ai-models-are-now-generally-available-get-pricing-plans/",
+        "AIArticleTitle": "Adobe\u2019s Firefly generative AI models are now generally available, get pricing plans",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/adobe-starts-paying-bonuses-to-stock-contributors-whose-content-is-being-used-to-train-firefly/",
+        "AIArticleTitle": "Adobe starts paying bonuses to Stock contributors whose content is being used to train Firefly",
+        "AIArticleDate": "3:00 PM GMT+2\u2022September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://techcrunch.com/2023/09/13/stability-ai-gunning-for-a-hit-launches-an-ai-powered-music-generator/",
+        "AIArticleTitle": "Stability AI, gunning for a hit, launches an AI-powered music generator",
+        "AIArticleDate": "1:34 PM GMT+2\u2022September 13, 2023"
+    },
+    {
         "AIArticleLink": "https://techcrunch.com/2023/09/08/5-steps-for-assembling-ai-driven-business-teams/",
         "AIArticleTitle": "5 steps for assembling AI-driven business teams",
         "AIArticleDate": "8:00 PM GMT+2\u2022September 8, 2023"
