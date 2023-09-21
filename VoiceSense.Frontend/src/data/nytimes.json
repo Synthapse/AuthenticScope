@@ -1,5 +1,35 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/20/theater/ai-stories-theater-prometheus-firebringer.html",
+        "AIArticleTitle": "Our Techno Future Is Here: A.I.-Scripted Stories Take the Stage",
+        "AIArticleDate": "September 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/20/nyregion/ai-john-jay-college.html",
+        "AIArticleTitle": "How A.I. Increased the Graduation Rate at John Jay College by 32 Points",
+        "AIArticleDate": "September 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/13/technology/google-layoffs-recruiters.html",
+        "AIArticleTitle": "Google Sheds Hundreds of Recruiters in Another Round of Layoffs",
+        "AIArticleDate": "September 13, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/12/opinion/letters/book-bans-censorship.html",
+        "AIArticleTitle": "Civil Disobedience Against Book Bans?",
+        "AIArticleDate": "September 12, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/09/11/espanol/biografia-elon-musk-walter-isaacson.html",
+        "AIArticleTitle": "Hay una nueva biograf\u00eda de Elon Musk y esto es lo que dice",
+        "AIArticleDate": "September 11, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/10/podcasts/the-daily/wikipedia-ai.html",
+        "AIArticleTitle": "The Sunday Read: \u2018Wikipedia\u2019s Moment of Truth\u2019",
+        "AIArticleDate": "September 10, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/09/17/us/politics/us-china-global-spy-operations.html",
         "AIArticleTitle": "In Risky Hunt for Secrets, U.S. and China Expand Global Spy Operations",
         "AIArticleDate": "September 17, 2023"
