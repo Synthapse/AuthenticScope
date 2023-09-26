@@ -1,5 +1,55 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/25/business/media/hollywood-writers-strike-deal.html",
+        "AIArticleTitle": "On Day 146, Screenwriters Reach Deal With Studios to End Their Strike",
+        "AIArticleDate": "September 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/interactive/2023/09/22/arts/design/david-salle-ai.html",
+        "AIArticleTitle": "A.I. Excels at Making Bad Art. Can an Artist Teach It to Create Something Good?",
+        "AIArticleDate": "September 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/22/podcasts/breaking-bard-who-owns-your-face-gamer-news.html",
+        "AIArticleTitle": "Breaking Bard + Who Owns Your Face? + Gamer News!",
+        "AIArticleDate": "September 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/21/science/lasker-awards-retina-protein-folding.html",
+        "AIArticleTitle": "Advances in Eye Scans and Protein Structure Win 2023 Lasker Awards",
+        "AIArticleDate": "September 21, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/21/business/dealbook/tech-giants-ai-consumer.html",
+        "AIArticleTitle": "Tech Giants See Chatbots Everywhere, Including in Your Inbox",
+        "AIArticleDate": "September 21, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/20/us/politics/will-hurd-ai-plan.html",
+        "AIArticleTitle": "Will Hurd Releases A.I. Plan, a First in the Republican Presidential Field",
+        "AIArticleDate": "September 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/20/technology/google-bard-extensions.html",
+        "AIArticleTitle": "Google\u2019s Bard Just Got More Powerful. It\u2019s Still Erratic.",
+        "AIArticleDate": "September 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/20/technology/chatgpt-dalle3-images-openai.html",
+        "AIArticleTitle": "ChatGPT Can Now Generate Images, Too",
+        "AIArticleDate": "September 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/18/opinion/contributors/google-antitrust-trial.html",
+        "AIArticleTitle": "The Google Trial Is Going to Rewrite Our Future",
+        "AIArticleDate": "September 18, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/14/movies/artificial-intelligence-hollywood.html",
+        "AIArticleTitle": "Do Studios Dream of Android Stars?",
+        "AIArticleDate": "September 14, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/09/20/theater/ai-stories-theater-prometheus-firebringer.html",
         "AIArticleTitle": "Our Techno Future Is Here: A.I.-Scripted Stories Take the Stage",
         "AIArticleDate": "September 20, 2023"
