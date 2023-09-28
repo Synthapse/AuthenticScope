@@ -52,7 +52,7 @@ const Filters = styled.div`
     width: 100%;
 `
 
-const Badge = styled.span`
+export const Badge = styled.span`
 
     width: 100px;
     height: 30px;

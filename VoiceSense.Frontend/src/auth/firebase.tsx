@@ -76,3 +76,83 @@ export const readHistoryData = async (userId: string) => {
         throw error; // Re-throw the error to be caught by the caller if needed
     }
 }
+
+export const saveComment = async (user: any, title: string, comment: string) => {
+
+    const collectionName = "comments"
+    console.log(user);
+
+    try {
+
+        const querySnapshot = await getDocs(
+            query(collection(db, collectionName),
+                where("userId", "==", user.uid),
+                where("title", "==", title)
+            )
+        );
+
+        if (querySnapshot.empty) {
+
+            const docRef = await addDoc(collection(db, collectionName), {
+                user: {
+                    userId: user.uid,
+                    userName: user.displayName ?? user.email
+                },
+                title: title,
+                comment: comment,
+                date: new Date()
+            });
+            console.log("Document written with ID: ", docRef.id);
+        }
+
+
+        console.log('This author already commented on this article');
+
+    } catch (error) {
+        console.log("Error getting documents: ", error);
+        throw error; // Re-throw the error to be caught by the caller if needed
+    }
+
+}
+
+export const readAllComments = async () => {
+
+    try {
+
+        const querySnapshot = await getDocs(
+            query(collection(db, "comments"))
+        );
+
+        if (!querySnapshot.empty) {
+            const newData = querySnapshot.docs.map((doc) => doc.data());
+            return newData;
+        }
+        return [];
+
+    } catch (error) {
+        console.log("Error getting documents: ", error);
+        throw error; // Re-throw the error to be caught by the caller if needed
+    }
+}
+
+export const readComments = async (title: string) => {
+
+    try {
+
+        const querySnapshot = await getDocs(
+            query(collection(db, "comments"),
+                where("title", "==", title)
+            )
+        );
+
+        if (!querySnapshot.empty) {
+            const newData = querySnapshot.docs.map((doc) => doc.data());
+            return newData;
+        }
+        return [];
+
+    } catch (error) {
+        console.log("Error getting documents: ", error);
+        throw error; // Re-throw the error to be caught by the caller if needed
+    }
+}

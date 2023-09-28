@@ -1,5 +1,7 @@
 import requests
 import json
+# import vertexai
+# from vertexai.language_models import TextGenerationModel
 
 def format_description(input_text):
     # Replace '%20' with spaces
@@ -10,9 +12,22 @@ def format_description(input_text):
     
     return formatted_text
 
+# def summarize_text(text="", url=""):
+
+#         vertexai.init(project="voicesense")
+#         parameters = {
+#             "temperature": 0.2,  # Temperature controls the degree of randomness in token selection.
+#             "max_output_tokens": 256,  # Token limit determines the maximum amount of text output.
+#             "top_p": 0.95,  # Tokens are selected from most probable to least until the sum of their probabilities equals the top_p value.
+#             "top_k": 40,  # A top_k of 1 means the selected token is the most probable among all tokens.
+#         }
+#         model = TextGenerationModel.from_pretrained("text-bison@001")
+#         response = model.predict("${url}", **parameters,)
+#         print(f"Response from Model: {response.text}")
+
 def summarize_text(text="",url=""):
     _url = "https://api.ai21.com/studio/v1/summarize"
-    token = "To0TSwbaSFhc8XcMykbLxInNWh5gFmef"
+    token = "nWiJt5OERn0EaYZKBR2FjntfpOJgC67k"
     
 
     if text:
@@ -38,4 +53,4 @@ def summarize_text(text="",url=""):
     print(response)
 
     summary = json.loads(response.text)
-    return summary['summary']
+    return summary['summary'].replace("None", "")

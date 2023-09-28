@@ -8,3 +8,5 @@ python-multipart>=0.0.5,<0.1.0
 beautifulsoup4==4.9.3
 stripe>=2.60.0,<3.0.0
 selenium
+vertexai>=0.23.0,<0.24.0
+```

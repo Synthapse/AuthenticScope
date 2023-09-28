@@ -16,7 +16,7 @@ import { devices } from './utils';
 import Stripe from './payments/Stripe';
 import Limit from './lottie/limit.json'
 import { useLottie } from 'lottie-react';
-import { auth, writeHistoryData } from './auth/firebase';
+import { auth, readComments, saveComment, writeHistoryData } from './auth/firebase';
 
 const ArticleContainer = styled.div`
     display: column;
@@ -217,6 +217,7 @@ const SummarizationArticle = () => {
     }
 
     const navigate = useNavigate();
+    const articleTitle = location.state.article.AIArticleTitle;
 
     return (
         <div style={{ paddingTop: '5%' }}>
@@ -224,7 +225,7 @@ const SummarizationArticle = () => {
             {limitSoftware ? <ProductLimitation />
                 :
                 <>
-                    <Header>{location.state.article.AIArticleTitle}</Header>
+                    <Header>{articleTitle}</Header>
                     {location.state.article.AIArticleDate}
                     {summarizationText ?
                         <>
@@ -291,8 +292,90 @@ const SummarizationArticle = () => {
                                 wrapperClass="dna-wrapper"
                             />
                         </div>
-                    }</>}
+                    }
+
+                    <Comments user={auth.currentUser} title={articleTitle} />
+
+                </>}
         </div >
+    )
+}
+
+
+const StyledInput = styled.input`
+    border-radius: 28px;
+    height: 40px;
+    width: 40%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    `
+
+
+interface IComments {
+    user: any;
+    title: string;
+}
+
+
+const ArticleComment = styled.div`
+    border-radius: 28px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+
+    > p:nth-child(2) {
+        font-size:12px;
+        margin:0;
+        padding:0;
+    }
+    `
+
+const Comments = ({ user, title }: IComments) => {
+
+    const [comment, setComment] = useState<string>('');
+    const [comments, setComments] = useState<string[]>([]);
+
+
+    const addComment = () => {
+        saveComment(user ?? '', title, comment).then(() => {
+            readArticleComments()
+        })
+    }
+
+    const readArticleComments = async () => {
+
+
+        await readComments(title).then((data) => {
+            setComments(data.map((x: any) => x))
+            console.log(data);
+        })
+
+    }
+
+    useEffect(() => {
+        readArticleComments()
+    }, [])
+
+
+    return (
+        <>
+            <hr />
+            <StyledInput
+                onChange={(e) => setComment(e.target.value)}
+                placeholder={"Whats your thoughts? Let's debate!"}
+            />
+            <Button theme="dark" onClick={() => addComment()}>Discuss</Button>
+            <br/><br/>
+            {comments.map((x: any, index) => {
+                return (
+                    <ArticleComment key={index}>
+                        <p>{x.comment}</p>
+                        <p>{x.user.userId} • {x.date.toDate().toString()}</p>
+                    </ArticleComment>
+                )
+            })}
+        </>
     )
 }
 

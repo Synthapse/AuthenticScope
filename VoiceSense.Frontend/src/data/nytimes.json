@@ -1,5 +1,35 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/28/podcasts/headlines-nyt-audio-app.html",
+        "AIArticleTitle": "Today\u2019s Top News: Key Takeaways From the G.O.P. Debate, and More",
+        "AIArticleDate": "September 28, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/27/technology/ai-images-social-media-sharing.html",
+        "AIArticleTitle": "To Bring Socializing Back to Social Networks, Apps Try A.I. Imagery",
+        "AIArticleDate": "September 27, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/25/technology/chatgpt-rlhf-human-tutors.html",
+        "AIArticleTitle": "The Secret Ingredient of ChatGPT Is Human Advice",
+        "AIArticleDate": "September 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/25/technology/chatgpt-talk-digital-assistance.html",
+        "AIArticleTitle": "ChatGPT Can Now Respond With Spoken Words",
+        "AIArticleDate": "September 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/25/business/dealbook/writers-guild-strike-deal-studios.html",
+        "AIArticleTitle": "How the Writers Guild Deal Reflects Organized Labor\u2019s Power",
+        "AIArticleDate": "September 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/09/23/opinion/ai-internet-lawsuit.html",
+        "AIArticleTitle": "The Internet Is About to Get Much Worse",
+        "AIArticleDate": "September 23, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/09/25/business/media/hollywood-writers-strike-deal.html",
         "AIArticleTitle": "On Day 146, Screenwriters Reach Deal With Studios to End Their Strike",
         "AIArticleDate": "September 25, 2023"

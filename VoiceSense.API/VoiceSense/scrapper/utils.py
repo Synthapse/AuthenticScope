@@ -122,4 +122,3 @@ def convert_article_date(article_date):
     except Exception as e:
         print("Error parsing date:", e)
         return None
-

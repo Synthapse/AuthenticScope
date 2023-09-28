@@ -2,9 +2,10 @@ import { useState, useRef, useEffect } from "react";
 import { GrArticle, GrFormNextLink } from "react-icons/gr";
 import { Dna } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
-import { AIArticle, HoverDiv, primaryColor } from "./ArticleList";
+import { AIArticle, Badge, HoverDiv, primaryColor } from "./ArticleList";
 import { parseDateTime } from "./utils";
 import styled from "styled-components";
+import { readAllComments, readComments } from "./auth/firebase";
 
 interface ILazyArticleLoader {
     articles: AIArticle[];
@@ -62,6 +63,7 @@ const ArticleListElement = styled.div`
 
 const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
     const [visibleArticles, setVisibleArticles] = useState<AIArticle[]>([]);
+    const [comments, setComments] = useState<any[]>([]);
     const observer: any = useRef();
 
     const navigate = useNavigate();
@@ -71,6 +73,12 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
     }
 
     useEffect(() => {
+
+
+        readAllComments().then((comments) => {
+            console.log(comments);
+            setComments(comments);
+        })
 
         observer.current = new IntersectionObserver(handleObserver, {
             root: null,
@@ -114,6 +122,17 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                 updatedFilteredArticles.map((article: AIArticle, index: number) => (
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
+
+                        {comments.map((comment: any) => {
+                            if (comment.title === article.AIArticleTitle) {
+                                return (
+                                    <Badge style ={{ background: 'yellow', color: '#363537', width: '160px'}} className={`badge badge-pill badge-primary`}>
+                                        Debate there!
+                                    </Badge>
+                                )
+                            }
+                            return null;
+                        })}
                         <div>
                             <div style={{ display: 'flex', marginTop: '20px' }}>
                                 <p>{article.AIArticleLink.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
