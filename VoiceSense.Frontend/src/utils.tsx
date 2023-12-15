@@ -67,7 +67,7 @@ export const getTimePeriodFilters = () => {
 
 export const getCurrentMonthName = () => {
     const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November"];
+        "July", "August", "September", "October", "November", "December"];
 
     const today = new Date();
     const currentMonth = today.getMonth();
