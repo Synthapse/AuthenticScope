@@ -1,5 +1,105 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/14/briefing/israel-hamas-ukraine-eu-china-youtube.html",
+        "AIArticleTitle": "Friday Briefing: U.S. Urges Israel to Scale Back Its War",
+        "AIArticleDate": "December 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/video/podcasts/100000009209311/the-rise-of-the-ai-pop-cover.html",
+        "AIArticleTitle": "The Rise of the A.I. Pop Star",
+        "AIArticleDate": "December 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/14/opinion/attention-digital-life.html",
+        "AIArticleTitle": "Attention! There\u2019s Life Beyond the Digital.",
+        "AIArticleDate": "December 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/14/espanol/inteligencia-artificial-hablar-muertos.html",
+        "AIArticleTitle": "La inteligencia artificial ahora se usa para hablar con los muertos",
+        "AIArticleDate": "December 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/11/technology/ai-chatbots-dead-relatives.html",
+        "AIArticleTitle": "Using A.I. to Talk to the Dead",
+        "AIArticleDate": "December 11, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/10/fashion/watches-casio-gshock-tokyo.html",
+        "AIArticleTitle": "Casio\u2019s G-Shock Celebrates Its 40th",
+        "AIArticleDate": "December 10, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/10/technology/ai-acceleration.html",
+        "AIArticleTitle": "This A.I. Subculture\u2019s Motto: Go, Go, Go",
+        "AIArticleDate": "December 10, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/10/espanol/inteligencia-artificial-como-regular.html",
+        "AIArticleTitle": "Cinco alternativas para regular la inteligencia artificial",
+        "AIArticleDate": "December 10, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/08/briefing/ai-dominance.html",
+        "AIArticleTitle": "The Race to Dominate A.I.",
+        "AIArticleDate": "December 08, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/08/podcasts/hardfork-google-gemini-cybertruck.html",
+        "AIArticleTitle": "Google\u2019s Next Top Model, Will the Cybertruck Crash? and This Week in A.I.",
+        "AIArticleDate": "December 08, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/08/podcasts/hardfork-google-gemini-cybertruck.html",
+        "AIArticleTitle": "Google\u2019s Next Top Model, Will the Cybertruck Crash? and This Week in A.I.",
+        "AIArticleDate": "December 08, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/07/special-series/artificial-intelligence-art.html",
+        "AIArticleTitle": "Where Does A.I. End and We Begin?",
+        "AIArticleDate": "December 07, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/06/business/dealbook/2024-election-media.html",
+        "AIArticleTitle": "The 2024 Election Will Be Unlike Any Other. Is the Media Ready?",
+        "AIArticleDate": "December 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/06/business/dealbook/dealbook-summit-leaders-answer-questions.html",
+        "AIArticleTitle": "From the DealBook Summit: Experts Look Forward",
+        "AIArticleDate": "December 06, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/05/business/sag-aftra-actors-ratify.html",
+        "AIArticleTitle": "Actors Ratify Deal With Hollywood Studios, With Reservations",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/05/t-magazine/jordan-wolfson-art.html",
+        "AIArticleTitle": "Jordan Wolfson Enjoys Being at the Center of the Storm",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/05/special-series/artificial-intelligence-cancer-vaccine-biontech.html",
+        "AIArticleTitle": "Medicine, Technology and the End of Cancer",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/05/technology/calm-jimmy-stewart-ai.html",
+        "AIArticleTitle": "Can\u2019t Sleep? Listen to an A.I.-Generated Bedtime Story From Jimmy Stewart.",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/05/science/bordeaux-red-wine-estate-machine-learning.html",
+        "AIArticleTitle": "Bordeaux Wine Snobs Have a Point, According to This Computer Model",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/interactive/2023/12/05/business/artificial-intelligence-timeline.html",
+        "AIArticleTitle": "8 Key Moments in the Development of A.I.",
+        "AIArticleDate": "December 05, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/09/28/podcasts/headlines-nyt-audio-app.html",
         "AIArticleTitle": "Today\u2019s Top News: Key Takeaways From the G.O.P. Debate, and More",
         "AIArticleDate": "September 28, 2023"
