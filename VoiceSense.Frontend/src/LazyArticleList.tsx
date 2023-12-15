@@ -116,6 +116,7 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
     const updatedFilteredArticles = articles.slice(0, visibleArticles.length).concat(filteredArticles.slice(visibleArticles.length)).filter((element) => element !== undefined);
     const SelectedComponent = isList ? ArticleListElement : ArticleListItem;
 
+
     return (
         <div>
             {updatedFilteredArticles?.length > 0 ? (
@@ -123,7 +124,7 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
                         {
-                            comments && comments.some((comment: any) => comment.title === article.AIArticleTitle) && (
+                            comments && comments.find((comment: any) => comment.title === article.AIArticleTitle) && (
                                 <Badge style={{ background: 'yellow', color: '#363537', width: '160px' }} className={`badge badge-pill badge-primary`}>
                                     Debate there!
                                 </Badge>
