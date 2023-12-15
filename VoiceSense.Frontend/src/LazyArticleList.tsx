@@ -76,7 +76,7 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
 
 
         readAllComments().then((comments) => {
-
+            console.log(comments);
             setComments(comments);
         })
 
@@ -123,14 +123,16 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
 
-                        {comments.some(comment => comment.title === article.AIArticleTitle) && (
-                            <Badge
-                                style={{ background: 'yellow', color: '#363537', width: '160px' }}
-                                className={`badge badge-pill badge-primary`}
-                            >
-                                Debate there!
-                            </Badge>
-                        )}
+                        {comments.map((comment: any) => {
+                            if (comment.title === article.AIArticleTitle) {
+                                return (
+                                    <Badge style ={{ background: 'yellow', color: '#363537', width: '160px'}} className={`badge badge-pill badge-primary`}>
+                                        Debate there!
+                                    </Badge>
+                                )
+                            }
+                            return null;
+                        })}
                         <div>
                             <div style={{ display: 'flex', marginTop: '20px' }}>
                                 <p>{article.AIArticleLink.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
