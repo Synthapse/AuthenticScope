@@ -116,6 +116,11 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
     const updatedFilteredArticles = articles.slice(0, visibleArticles.length).concat(filteredArticles.slice(visibleArticles.length)).filter((element) => element !== undefined);
     const SelectedComponent = isList ? ArticleListElement : ArticleListItem;
 
+    const renderBadge = () => (
+        <Badge style={{ background: 'yellow', color: '#363537', width: '160px' }} className={`badge badge-pill badge-primary`}>
+            Debate there!
+        </Badge>
+    );
 
     return (
         <div>
@@ -123,13 +128,7 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                 updatedFilteredArticles.map((article: AIArticle, index: number) => (
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
-                        {
-                            comments && comments.find((comment: any) => comment.title === article.AIArticleTitle) && (
-                                <Badge style={{ background: 'yellow', color: '#363537', width: '160px' }} className={`badge badge-pill badge-primary`}>
-                                    Debate there!
-                                </Badge>
-                            )
-                        }
+                        {comments.length && renderBadge()}
                         <div>
                             <div style={{ display: 'flex', marginTop: '20px' }}>
                                 <p>{article.AIArticleLink.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
