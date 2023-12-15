@@ -122,9 +122,8 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                 updatedFilteredArticles.map((article: AIArticle, index: number) => (
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
-
                         {
-                            comments.some((comment: any) => comment.title === article.AIArticleTitle) && (
+                            comments && comments.some((comment: any) => comment.title === article.AIArticleTitle) && (
                                 <Badge style={{ background: 'yellow', color: '#363537', width: '160px' }} className={`badge badge-pill badge-primary`}>
                                     Debate there!
                                 </Badge>
