@@ -128,7 +128,7 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
                 updatedFilteredArticles.map((article: AIArticle, index: number) => (
                     <SelectedComponent key={index} onClick={!isList ? () => navigateToArticle(article) : undefined}>
                         <h1>{article.AIArticleTitle}</h1>
-                        {comments.length && renderBadge()}
+                        {comments?.length > 0 && renderBadge()}
                         <div>
                             <div style={{ display: 'flex', marginTop: '20px' }}>
                                 <p>{article.AIArticleLink.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
