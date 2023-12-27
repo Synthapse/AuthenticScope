@@ -28,7 +28,7 @@ jobs:
           REPLACEMENTS: |
             STRIPE_KEY=${{ secrets.STRIPE_KEY }}
             ANOTHER_KEY=another_value
-          FILE_PATH: AuthenticScope.API/VoiceSense/.env.test
+          FILE_PATH: AuthenticScope.API/AuthenticScope/.env.test
         run: |
           for REPLACEMENT in $REPLACEMENTS; do
             KEY=$(echo $REPLACEMENT | cut -d '=' -f 1)
