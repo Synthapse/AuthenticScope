@@ -27,9 +27,7 @@ def format_description(input_text):
 
 def summarize_text(text="",url=""):
     _url = "https://api.ai21.com/studio/v1/summarize"
-    token = "nWiJt5OERn0EaYZKBR2FjntfpOJgC67k"
-    token2 = "mZayByWGDISZWLRMMaNNsDvSJkMhRjAp"
-    
+    token = "An98AF6Sk9rG0TTzs1TKCV7FuKtDhzkb"
 
     if text:
         print(format_description(text))
@@ -44,14 +42,17 @@ def summarize_text(text="",url=""):
     headers = {
         "accept": "application/json",
         "content-type": "application/json",
-        "Authorization": "Bearer " + token2
+        "Authorization": "Bearer " + token
     }
 
 
     print('Connecting with Jurassic AI:')
-    response = requests.post(_url, json=payload, headers=headers)
-
-    print(response)
+    try:
+        response = requests.post(_url, json=payload, headers=headers)
+        print(response)
+    except(ex):
+        print(ex)
+        return ex
 
     summary = json.loads(response.text)
     return summary['summary'].replace("None", "")
