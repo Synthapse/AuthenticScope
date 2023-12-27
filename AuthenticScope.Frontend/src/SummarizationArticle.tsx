@@ -70,26 +70,17 @@ const SummarizationArticle = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [voices, setVoices] = useState<IVoice[]>([]);
     const [loading, setLoading] = useState(false);
-    const [queue, setQueue] = useState<string[]>([]);
 
 
     const summarizeText = async (articleUrl: string) => {
         setLoading(true)
         try {
-            if (isURL(articleUrl)) {
-
-                const response = await axios.get(`${config.apps.VoiceSenseAPI.url}/summarize?url=${articleUrl}`);
-                setSummarizationText(response?.data)
-                if (auth.currentUser) {
-                    saveDataToUserHistory(response?.data);
-                }
-                setLoading(false)
+            const response = await axios.get(`${config.apps.VoiceSenseAPI.url}/summarize?url=${articleUrl}`);
+            setSummarizationText(response?.data)
+            if (auth.currentUser) {
+                saveDataToUserHistory(response?.data);
             }
-            else {
-                const response = await axios.get(`${config.apps.VoiceSenseAPI.url}/summarize?text=${articleUrl}`);
-                setSummarizationText(response?.data)
-                setLoading(false)
-            }
+            setLoading(false)
         } catch (error) {
             console.error('Error:', error);
         }
@@ -255,29 +246,30 @@ const SummarizationArticle = () => {
                                                 <LinkText onClick={() => setAudioUrl(null)}><p style={{ margin: 0, marginRight: '10px', fontSize: '12px' }}><BsSoundwave />Generate another</p></LinkText>
                                             </div>
                                         </div> :
-                                            <div>
-                                                <Button onClick={() => sendVoiceGeneratorRequest(summarizationText)} outline theme="dark">
-                                                    <FiMusic /> Generate audio
-                                                </Button>
-                                                <LinkText onClick={() => setCustomize(!customize)}> <BiCustomize /> <p>Customize</p></LinkText>
-                                                {customize &&
-                                                    <div style={{ width: '24%', fontSize: '12px' }}>
-                                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                                                            <p>Gender:</p>
-                                                            <Select options={genders} setState={setGenderWithLimitation} />
-                                                        </div>
-                                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                                                            <p>Age:</p>
-                                                            <Select options={ages} setState={setAgesWithLimitation} />
-                                                        </div>
+                                        <div>Temporary, not audio generation</div>
+                                            // <div>
+                                            //     <Button onClick={() => sendVoiceGeneratorRequest(summarizationText)} outline theme="dark">
+                                            //         <FiMusic /> Generate audio
+                                            //     </Button>
+                                            //     <LinkText onClick={() => setCustomize(!customize)}> <BiCustomize /> <p>Customize</p></LinkText>
+                                            //     {customize &&
+                                            //         <div style={{ width: '24%', fontSize: '12px' }}>
+                                            //             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                            //                 <p>Gender:</p>
+                                            //                 <Select options={genders} setState={setGenderWithLimitation} />
+                                            //             </div>
+                                            //             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                            //                 <p>Age:</p>
+                                            //                 <Select options={ages} setState={setAgesWithLimitation} />
+                                            //             </div>
 
-                                                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                                                            <p>Description:</p>
-                                                            <Select options={descriptions} setState={setDescriptionWithLimitation} />
-                                                        </div>
-                                                    </div>
-                                                }
-                                            </div>
+                                            //             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+                                            //                 <p>Description:</p>
+                                            //                 <Select options={descriptions} setState={setDescriptionWithLimitation} />
+                                            //             </div>
+                                            //         </div>
+                                            //     }
+                                            // </div>
                                         }
                                     </>
                                 }
@@ -366,7 +358,7 @@ const Comments = ({ user, title }: IComments) => {
                 placeholder={"Whats your thoughts? Let's debate!"}
             />
             <Button theme="dark" onClick={() => addComment()}>Discuss</Button>
-            <br/><br/>
+            <br /><br />
             {comments.map((x: any, index) => {
                 return (
                     <ArticleComment key={index}>
