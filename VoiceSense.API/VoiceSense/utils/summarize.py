@@ -28,6 +28,7 @@ def format_description(input_text):
 def summarize_text(text="",url=""):
     _url = "https://api.ai21.com/studio/v1/summarize"
     token = "nWiJt5OERn0EaYZKBR2FjntfpOJgC67k"
+    token2 = "mZayByWGDISZWLRMMaNNsDvSJkMhRjAp"
     
 
     if text:
@@ -43,7 +44,7 @@ def summarize_text(text="",url=""):
     headers = {
         "accept": "application/json",
         "content-type": "application/json",
-        "Authorization": "Bearer " + token
+        "Authorization": "Bearer " + token2
     }
 
 
