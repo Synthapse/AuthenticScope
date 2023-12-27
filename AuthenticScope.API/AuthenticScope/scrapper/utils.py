@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 def add_elements_to_json_file(new_articles, file_name):
     # Step 1: Read existing JSON data
-    json_file_path = f'../../VoiceSense.Frontend/src/data/{file_name}.json'
+    json_file_path = f'../../AuthenticScope.Frontend/src/data/{file_name}.json'
 
     # Step 1: Read existing JSON data
     try:
@@ -34,7 +34,7 @@ def add_elements_to_json_file(new_articles, file_name):
 
 def add_elements_to_json_file(new_articles, file_name):
     # Step 1: Read existing JSON data
-    json_file_path = f'../../VoiceSense.Frontend/src/data/{file_name}.json'
+    json_file_path = f'../../AuthenticScope.Frontend/src/data/{file_name}.json'
 
     # Step 1: Read existing JSON data
     try:

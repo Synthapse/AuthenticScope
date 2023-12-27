@@ -1,4 +1,4 @@
-name: VoiceSense Frontend
+name: AuthenticScope Frontend
 
 on:
   push:

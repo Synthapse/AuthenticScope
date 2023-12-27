@@ -1,5 +1,70 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/26/opinion/ai-future-photography.html",
+        "AIArticleTitle": "A.I. Is the Future of Photography. Does That Mean Photography Is Dead?",
+        "AIArticleDate": "December 26, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/24/us/politics/china-russia-election-interference.html",
+        "AIArticleTitle": "How Russian and Chinese Interference Could Affect the 2024 Election",
+        "AIArticleDate": "December 24, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/22/podcasts/hard-fork-predictions-jenny-slate.html",
+        "AIArticleTitle": "Our 2024 Predictions, and Jenny Slate Answers Your Hard Questions",
+        "AIArticleDate": "December 22, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/20/opinion/year-review-apple-capitalism.html",
+        "AIArticleTitle": "The Year in Apple Watches, A.I., Anarcho-Capitalists and Anticapitalists",
+        "AIArticleDate": "December 20, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/19/espanol/inteligencia-artificial-aplicaciones.html",
+        "AIArticleTitle": "El a\u00f1o de la inteligencia artificial",
+        "AIArticleDate": "December 19, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/19/opinion/artificial-intelligence-chatgpt.html",
+        "AIArticleTitle": "One Year In and ChatGPT Already Has Us Doing Its Bidding",
+        "AIArticleDate": "December 19, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/19/espanol/inteligencia-artificial-openai-crisis.html",
+        "AIArticleTitle": "As\u00ed fue la crisis en OpenAI sobre el futuro de la inteligencia artificial",
+        "AIArticleDate": "December 19, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/18/espanol/van-gogh-inteligencia-artificial.html",
+        "AIArticleTitle": "\u00bfPuede un Van Gogh de IA ayudar a llevar m\u00e1s gente a los museos?",
+        "AIArticleDate": "December 18, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/17/insider/ai-chatbots-humans-hallucinate.html",
+        "AIArticleTitle": "A.I. Chatbots, Hens and Humans Can All \u2018Hallucinate\u2019",
+        "AIArticleDate": "December 17, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/14/technology/shopping-ai-chatbots.html",
+        "AIArticleTitle": "My Not-So-Perfect Holiday Shopping Excursion With A.I. Chatbots",
+        "AIArticleDate": "December 14, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/12/espanol/opinion/inteligencia-artificial-riesgos.html",
+        "AIArticleTitle": "La pregunta crucial sobre la IA que no nos estamos haciendo",
+        "AIArticleDate": "December 12, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/12/business/economy/microsoft-unions.html",
+        "AIArticleTitle": "Microsoft Agrees to Remain Neutral in Union Campaigns",
+        "AIArticleDate": "December 12, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/10/opinion/openai-silicon-valley-superalignment.html",
+        "AIArticleTitle": "Should A.I. Accelerate? Decelerate? The Answer Is Both.",
+        "AIArticleDate": "December 10, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/12/09/special-series/artificial-intelligence-art-kris-bowers.html",
         "AIArticleTitle": "Artificial Intelligence Is an Unreliable Narrator",
         "AIArticleDate": "December 09, 2023"

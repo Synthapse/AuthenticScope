@@ -1,4 +1,4 @@
-name: VoiceSense API
+name: AuthenticScope API
 
 on:
   push:
