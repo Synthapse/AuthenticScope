@@ -75,11 +75,27 @@ const SummarizationArticle = () => {
     const summarizeText = async (articleUrl: string) => {
         setLoading(true)
         try {
-            const response = await axios.get(`${config.apps.VoiceSenseAPI.url}/summarize?url=${articleUrl}`);
-            setSummarizationText(response?.data)
-            if (auth.currentUser) {
-                saveDataToUserHistory(response?.data);
-            }
+
+            const options = {
+                method: 'POST',
+                headers: {
+                    accept: 'application/json',
+                    'content-type': 'application/json',
+                    Authorization: 'Bearer An98AF6Sk9rG0TTzs1TKCV7FuKtDhzkb'
+                },
+                body: JSON.stringify({ sourceType: 'URL', source: articleUrl })
+            };
+
+            fetch('https://api.ai21.com/studio/v1/summarize', options)
+                .then(response => response.json())
+                .then(response => {
+                    setSummarizationText(response?.summary)
+                    if (auth.currentUser) {
+                        saveDataToUserHistory(response?.summary);
+                    }
+                }).catch(err => console.error(err));
+
+
             setLoading(false)
         } catch (error) {
             console.error('Error:', error);
@@ -148,10 +164,10 @@ const SummarizationArticle = () => {
     }
 
     useEffect(() => {
-        getVoices();
+        //getVoices();
         setLoading(true);
         summarizeText(location.state.article.AIArticleLink);
-        storeUserVisit();
+        //storeUserVisit();
     }, [])
 
 

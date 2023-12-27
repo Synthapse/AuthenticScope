@@ -12,6 +12,9 @@ def format_description(input_text):
     
     return formatted_text
 
+
+# 27.12 - changing Jurrasic AI to Google Service (?)
+
 # def summarize_text(text="", url=""):
 
 #         vertexai.init(project="voicesense")
@@ -24,35 +27,3 @@ def format_description(input_text):
 #         model = TextGenerationModel.from_pretrained("text-bison@001")
 #         response = model.predict("${url}", **parameters,)
 #         print(f"Response from Model: {response.text}")
-
-def summarize_text(text="",url=""):
-    _url = "https://api.ai21.com/studio/v1/summarize"
-    token = "An98AF6Sk9rG0TTzs1TKCV7FuKtDhzkb"
-
-    if text:
-        print(format_description(text))
-        payload = { "sourceType": "TEXT",
-                    "source": format_description(text) }
-    elif url:
-        payload = { "sourceType": "URL",
-                    "source": url }
-    else:
-        return -1
-
-    headers = {
-        "accept": "application/json",
-        "content-type": "application/json",
-        "Authorization": "Bearer " + token
-    }
-
-
-    print('Connecting with Jurassic AI:')
-    try:
-        response = requests.post(_url, json=payload, headers=headers)
-        print(response)
-    except(ex):
-        print(ex)
-        return ex
-
-    summary = json.loads(response.text)
-    return summary['summary'].replace("None", "")

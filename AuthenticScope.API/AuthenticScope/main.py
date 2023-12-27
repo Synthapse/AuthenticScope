@@ -122,18 +122,6 @@ async def scrappeUrls():
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
 
-@app.get("/summarize")
-async def summarizeText(url: str = None, text: str = None):
-    try:
-        if(url == None and text == None):
-            return "Please provide either a url or text"
-        
-        summarization_text = summarize_text(text, url)
-        print("Summarization Text: " + summarization_text)
-        return summarization_text
-    except Exception as e:
-        return JSONResponse(content={"error": str(e)}, status_code=500)
-        
 @app.get("/audioGenerate")
 async def generate_audio(summarization_text: str = None, accent: str = None, age:str = None, description:str = None, gender:str = None, useCase:str = None):
 
