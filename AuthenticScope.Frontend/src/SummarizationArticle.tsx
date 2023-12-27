@@ -89,9 +89,9 @@ const SummarizationArticle = () => {
             fetch('https://api.ai21.com/studio/v1/summarize', options)
                 .then(response => response.json())
                 .then(response => {
-                    setSummarizationText(response?.summary)
+                    setSummarizationText(response?.summary.replace(/None/g, ''));
                     if (auth.currentUser) {
-                        saveDataToUserHistory(response?.summary);
+                        saveDataToUserHistory(response?.summary.replace(/None/g, ''));
                     }
                 }).catch(err => console.error(err));
 
