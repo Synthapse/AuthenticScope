@@ -246,7 +246,7 @@ const SummarizationArticle = () => {
                                                 <LinkText onClick={() => setAudioUrl(null)}><p style={{ margin: 0, marginRight: '10px', fontSize: '12px' }}><BsSoundwave />Generate another</p></LinkText>
                                             </div>
                                         </div> :
-                                        <div>Temporary, not audio generation</div>
+                                            <div>Audio Generation only for Premium Users Tiers.</div>
                                             // <div>
                                             //     <Button onClick={() => sendVoiceGeneratorRequest(summarizationText)} outline theme="dark">
                                             //         <FiMusic /> Generate audio

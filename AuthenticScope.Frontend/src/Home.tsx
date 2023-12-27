@@ -58,19 +58,7 @@ const Home = () => {
 
     return (
         <HomeContainer>
-            <Header><b>VoiceSense</b>     <TypeAnimation
-                sequence={[
-                    // Same substring at the start will only be typed out once, initially
-                    'Summarization',
-                    2000, // wait 1s before replacing "Summarization" with "Conversation"
-                    'Conversation',
-                    2000
-                ]}
-                wrapper="span"
-                style={{ color: 'white' }}
-                speed={50}
-                repeat={Infinity}
-            /></Header>
+            <Header><b>Authentic Scope</b></Header>
             <Paragraph>Turn articles into audio with cutting-edge NLP. Get concise summaries for listening on the go, presentations, and accessibility. Streamline content into engaging audio formats effortlessly.</Paragraph>
             <Link to="/demo">
                 <ButtonContainer>
