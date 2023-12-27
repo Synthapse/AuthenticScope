@@ -33,17 +33,17 @@ jobs:
 
       - uses: microsoft/variable-substitution@v1
         with:
-          files: 'VoiceSense.Frontend/src/config.json'
+          files: 'AuthenticScope.Frontend/src/config.json'
         env:
           apps.VoiceSenseAPI.url: ${{ env.API_URL }}
           apps.VoiceSenseAPI.isProduction: ${{ env.ENVIRONMENT }}
 
       - name: Read config.json from VoiceSense.Front
-        run: 'cat VoiceSense.Frontend/src/config.json'
+        run: 'cat AuthenticScope.Frontend/src/config.json'
 
       - name: Build and deploy frontend to static GCP Cloud Storage
         run: |
-          cd ./VoiceSense.Frontend/
+          cd ./AuthenticScope.Frontend/
           npm install --force
           CI=false npm run build
           gsutil web set -m index.html -e index.html gs://${{ env.BUCKET }}
