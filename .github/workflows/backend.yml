@@ -28,7 +28,7 @@ jobs:
           REPLACEMENTS: |
             STRIPE_KEY=${{ secrets.STRIPE_KEY }}
             ANOTHER_KEY=another_value
-          FILE_PATH: VoiceSense.API/VoiceSense/.env.test
+          FILE_PATH: AuthenticScope.API/VoiceSense/.env.test
         run: |
           for REPLACEMENT in $REPLACEMENTS; do
             KEY=$(echo $REPLACEMENT | cut -d '=' -f 1)
@@ -51,7 +51,7 @@ jobs:
       - name: Build and Push Container
         run: |-
           gcloud auth list
-          cd VoiceSense.API/VoiceSense
+          cd AuthenticScope.API/AuthenticScope
           docker build -t ${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}/${{ github.sha }} ./
           docker push ${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.SERVICE }}/${{ github.sha }}
 
