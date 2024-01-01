@@ -17,6 +17,7 @@ import { BsCardChecklist, BsListUl } from "react-icons/bs";
 import Menu from "./components/Menu";
 import Search from "./components/Search";
 import { readAllComments, readComments } from "./auth/firebase";
+import { CarouselChild, CarouselContainer } from "./components/Carousell";
 interface ISelect {
     options: string[];
     setState: (value: string) => void;
@@ -96,11 +97,6 @@ export const HoverDiv = styled.div`
     }
 `;
 
-const TodayArticles = styled.div`
-    display: flex;
-    justify-content: space-between;
-`
-
 const TodayArticle = styled.div`
     display: flex;
     width: 100%;
@@ -109,6 +105,11 @@ const TodayArticle = styled.div`
     padding: 10px;
     margin-bottom: 20px;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding: 0;
 
     h2 {
         font-size: 16px;
@@ -122,8 +123,8 @@ const TodayArticle = styled.div`
     }
 
     @media ${devices.laptopL} {
-        width: 33%;
         height:160px;
+        padding: 10px;
         }
 `;
 
@@ -149,7 +150,6 @@ const TodayBadge = styled.div`
     padding: 5px;
     border-radius: 0 0 10px 10px;
   `
-
 
 export const Select = ({ options, setState }: ISelect) => {
 
@@ -387,20 +387,23 @@ const ArticleList = () => {
                         </HoverDiv>
                     </Filters>
                 </ScrollingFilters>
-                <TodayArticles>
-                    {todayArticles.length > 0 && todayArticles.slice(2).map((article: AIArticle) => (
-                        <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
-                            <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
-                                <p>Today!</p>
-                            </TodayArticleHeader>
-                            <h2>{article.AIArticleTitle.substring(0, 43).trimEnd() + '...'}</h2>
-                            {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
-                                Discussion there! Let’s debate
-                            </TodayBadge> : null}
-                        </TodayArticle>
-
-                    ))}
-                </TodayArticles>
+                {todayArticles.length > 0 &&
+                    <CarouselContainer slidesPresented={3}>
+                            {todayArticles.map((article: AIArticle) => (
+                                <CarouselChild>
+                                    <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
+                                        <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
+                                            <p>Today!</p>
+                                        </TodayArticleHeader>
+                                        <h2>{article.AIArticleTitle.substring(0, 43).trimEnd() + '...'}</h2>
+                                        {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
+                                            Discussion there! Let’s debate
+                                        </TodayBadge> : null}
+                                    </TodayArticle>
+                                </CarouselChild>
+                            ))}
+                    </CarouselContainer>
+                }
                 <hr />
                 <LazyArticleLoader
                     comments={comments}
