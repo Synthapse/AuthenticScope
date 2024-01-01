@@ -89,11 +89,11 @@ function carouselReducer(state: CarouselState, action: CarouselAction): Carousel
         active: state.desired,
       };
     // 01.01.2024 -> commented due to error
-    case 'drag':
-      return {
-        ...state,
-        offset: action.offset,
-      };
+    // case 'drag':
+    //   return {
+    //     ...state,
+    //     offset: action.offset,
+    //   };
     default:
       return state;
   }
@@ -151,11 +151,13 @@ export function useCarousel(
     trackMouse: true,
     trackTouch: true,
   });
+
+  
   const handlers = {
     onMouseDown,
     ref(container: HTMLElement) {
       setContainer(container && container.firstElementChild);
-      return ref(container);
+      return ref(container && container);
     },
   };
 
