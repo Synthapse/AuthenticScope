@@ -4,6 +4,7 @@ import { Dna } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import { AIArticle, Badge, HoverDiv, primaryColor } from "./ArticleList";
 import styled from "styled-components";
+import { renderLogo } from "./utils";
 
 interface ILazyArticleLoader {
     articles: AIArticle[];
@@ -130,7 +131,7 @@ const LazyArticleLoader = ({ articles, isList, comments }: ILazyArticleLoader) =
                         {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? renderBadge() : null}
                         <div>
                             <div style={{ display: 'flex', marginTop: '20px' }}>
-                                <p>{article.AIArticleLink.replace(/^(https?:\/\/)?(www\.)?/i, '').split('/')[0]} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
+                                <p>{renderLogo(article.AIArticleLink)} • </p><p style={{ marginLeft: '5px' }}>{article.AIArticleDate} </p>
                             </div>
                         </div>
                         <HoverDiv>

@@ -1,3 +1,8 @@
+import styled from "styled-components";
+import TechcrunchLogo from './images/techcrunchlogo.svg';
+import NYTimesLogo from './images/nytimeslogo.svg';
+import MediumLogo from './images/mediumlogo.svg';
+
 const sizes = {
     mobileL: '425px',
     tablet: '768px',
@@ -28,6 +33,24 @@ export const parseDateTime = (dateTimeString: string) => {
     //Is there a need for more precise time? -> hours and minutes
     return `${parsedDate}`;
 };
+
+const ArticleLogo = styled.img`
+    margin-right: 10px;
+`
+
+export const renderLogo = (link: string) => {
+
+    if (link.includes('techcrunch')) {
+        return <ArticleLogo src={TechcrunchLogo} />
+    }
+    if (link.includes('medium')) {
+        return <ArticleLogo src={MediumLogo} />
+    }
+    if (link.includes('nytimes')) {
+        return <ArticleLogo src={NYTimesLogo} />
+    }
+
+}
 
 export const parseDate = (dateString: string | number | Date) => {
     const dateObj = new Date(dateString);

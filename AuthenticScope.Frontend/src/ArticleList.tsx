@@ -4,10 +4,8 @@ import { FormSelect, Tooltip } from "shards-react";
 import { Dna } from 'react-loader-spinner'
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
-import TechcrunchLogo from './images/techcrunchlogo.svg';
-import NYTimesLogo from './images/nytimeslogo.svg';
-import MediumLogo from './images/mediumlogo.svg';
-import { devices, getCurrentMonthName, getTimePeriodFilters, parseDate, parseDateTime, parseTodayToDate, parseYesterdayToDate } from "./utils";
+
+import { devices, getCurrentMonthName, getTimePeriodFilters, parseDate, parseDateTime, parseTodayToDate, parseYesterdayToDate, renderLogo } from "./utils";
 import techCrunchArticlesArchive from './data/techcrunch.json';
 import nyTimesArticlesArchive from './data/nytimes.json';
 import deepmindArticlesArchive from './data/deepmind.json';
@@ -137,9 +135,7 @@ const TodayArticleHeader = styled.div`
     }
     `
 
-const ArticleLogo = styled.img`
-    margin-right: 10px;
-`
+
 
 const TodayBadge = styled.div`
     background: yellow;
@@ -313,19 +309,7 @@ const ArticleList = () => {
 
     const todayArticles = filteredArticles.filter((article: AIArticle) => parseDate(article.AIArticleDate) == parseTodayToDate())
 
-    const renderLogo = (link: string) => {
 
-        if (link.includes('techcrunch')) {
-            return <ArticleLogo src={TechcrunchLogo} />
-        }
-        if (link.includes('medium')) {
-            return <ArticleLogo src={MediumLogo} />
-        }
-        if (link.includes('nytimes')) {
-            return <ArticleLogo src={NYTimesLogo} />
-        }
-
-    }
 
     useEffect(() => {
         readAllComments().then((comments) => {
