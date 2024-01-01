@@ -328,7 +328,7 @@ const ArticleList = () => {
             /BlackBerry/i,
             /Windows Phone/i
         ];
-        
+
         return toMatch.some((toMatchItem) => {
             return navigator.userAgent.match(toMatchItem);
         });
@@ -390,21 +390,23 @@ const ArticleList = () => {
                     </Filters>
                 </ScrollingFilters>
                 {todayArticles.length > 0 &&
-                    <CarouselContainer slidesPresented={1}>
+                    <>
+                        <CarouselContainer slidesPresented={1}>
                             {todayArticles.map((article: AIArticle) => (
-                                    <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
-                                        <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
-                                            <p>Today!</p>
-                                        </TodayArticleHeader>
-                                        <h2>{article.AIArticleTitle}</h2>
-                                        {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
-                                            Discussion there! Let’s debate
-                                        </TodayBadge> : null}
-                                    </TodayArticle>
+                                <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
+                                    <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
+                                        <p>Today!</p>
+                                    </TodayArticleHeader>
+                                    <h2>{article.AIArticleTitle}</h2>
+                                    {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
+                                        Discussion there! Let’s debate
+                                    </TodayBadge> : null}
+                                </TodayArticle>
                             ))}
-                    </CarouselContainer>
+                        </CarouselContainer>
+                        <hr />
+                    </>
                 }
-                <hr />
                 <LazyArticleLoader
                     comments={comments}
                     articles={filteredArticles

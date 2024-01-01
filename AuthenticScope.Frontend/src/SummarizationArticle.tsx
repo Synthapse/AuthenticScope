@@ -72,6 +72,14 @@ const SummarizationArticle = () => {
     const [loading, setLoading] = useState(false);
 
 
+    const textSentiment = async (text: string) => {
+        try {
+        }
+        catch (error) {
+            console.error('Error:', error);
+        }
+    }
+
     const summarizeText = async (articleUrl: string) => {
         setLoading(true)
         try {
@@ -91,6 +99,7 @@ const SummarizationArticle = () => {
                 .then(response => {
                     setSummarizationText(response?.summary.replace(/None/g, ''));
                     if (auth.currentUser) {
+                        textSentiment(response?.summary.replace(/None/g, ''))
                         saveDataToUserHistory(response?.summary.replace(/None/g, ''));
                     }
                 }).catch(err => console.error(err));

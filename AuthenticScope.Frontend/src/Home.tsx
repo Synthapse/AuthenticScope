@@ -59,14 +59,14 @@ const MainParagraph = styled.p`
     font-size: 24px;
     color: #fff;
     max-width: 100%;
-    font-family: Gilroy-Light;
+    font-weight: 200;
 
     @media ${devices.laptopL} {
         width: 420px;
         font-size: 24px;
         color: #fff;
         max-width: 100%;
-        font-family: Gilroy-Light;
+        font-weight: 200;
     }
     `
 
