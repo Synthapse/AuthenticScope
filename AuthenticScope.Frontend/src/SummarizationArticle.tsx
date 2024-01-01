@@ -26,8 +26,13 @@ const Header = styled.h2`
     font-weight: bold;
     letter-spacing: 1.5;
     line-height: 1.35;
-    width: 60%;
+    width: 100%;
+    font-size:36px;
     margin-bottom: 40px;
+
+    @media ${devices.laptopL} {
+        font-size: 42px;
+    }
 `
 
 const ArticleText = styled.div`
@@ -36,6 +41,7 @@ const ArticleText = styled.div`
     border-radius: 28px;
     padding-top:20px;
     font-size: 18px;
+    text-align: justify;
     margin-right: 20px;
 
     @media ${devices.laptopL} {
