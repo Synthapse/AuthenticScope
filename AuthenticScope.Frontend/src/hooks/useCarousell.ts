@@ -89,11 +89,11 @@ function carouselReducer(state: CarouselState, action: CarouselAction): Carousel
         active: state.desired,
       };
     // 01.01.2024 -> commented due to error
-    // case 'drag':
-    //   return {
-    //     ...state,
-    //     offset: action.offset,
-    //   };
+    case 'drag':
+      return {
+        ...state,
+        offset: action.offset,
+      };
     default:
       return state;
   }
@@ -175,11 +175,16 @@ export function useCarousel(
     left: `-${(state.active + 1) * totalWidth}%`,
   };
 
+
+
   if (state.desired !== state.active) {
     const dist = Math.abs(state.active - state.desired);
     const pref = Math.sign(state.offset || 0);
     const dir = (dist > length / 2 ? 1 : -1) * Math.sign(state.desired - state.active);
     const shift = (totalWidth * (pref || dir)) / (length + shadowSlides);
+
+    console.log(shift)
+
     style.transition = smooth;
     style.transform = `translateX(${shift}%)`;
   } else if (!isNaN(state.offset)) {

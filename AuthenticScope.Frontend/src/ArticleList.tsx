@@ -109,7 +109,6 @@ const TodayArticle = styled.div`
     background-size: cover;
     background-position: center;
     display: flex;
-    padding: 0;
 
     h2 {
         font-size: 16px;
@@ -334,6 +333,25 @@ const ArticleList = () => {
         })
     }, [])
 
+
+    function detectMob() {
+        const toMatch = [
+            /Android/i,
+            /webOS/i,
+            /iPhone/i,
+            /iPad/i,
+            /iPod/i,
+            /BlackBerry/i,
+            /Windows Phone/i
+        ];
+        
+        return toMatch.some((toMatchItem) => {
+            return navigator.userAgent.match(toMatchItem);
+        });
+    }
+
+    const isMobile = detectMob();
+
     return (<div style={{ paddingTop: '5%' }}>
         <Menu />
         {!loading ?
@@ -388,19 +406,17 @@ const ArticleList = () => {
                     </Filters>
                 </ScrollingFilters>
                 {todayArticles.length > 0 &&
-                    <CarouselContainer slidesPresented={3}>
+                    <CarouselContainer slidesPresented={1}>
                             {todayArticles.map((article: AIArticle) => (
-                                <CarouselChild>
                                     <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
                                         <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
                                             <p>Today!</p>
                                         </TodayArticleHeader>
-                                        <h2>{article.AIArticleTitle.substring(0, 43).trimEnd() + '...'}</h2>
+                                        <h2>{article.AIArticleTitle}</h2>
                                         {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
                                             Discussion there! Let’s debate
                                         </TodayBadge> : null}
                                     </TodayArticle>
-                                </CarouselChild>
                             ))}
                     </CarouselContainer>
                 }
