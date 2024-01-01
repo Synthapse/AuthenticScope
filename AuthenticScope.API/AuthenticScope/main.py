@@ -3,7 +3,6 @@ import time
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, Form, UploadFile
 from fastapi.responses import StreamingResponse
-from utils.summarize import summarize_text
 from utils.audiogen import audio_generator, chat_to_audio
 from utils.get_voice_id import get_voice_id
 from pydantic import BaseModel

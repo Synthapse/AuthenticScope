@@ -3,13 +3,12 @@ import { GrArticle, GrFormNextLink } from "react-icons/gr";
 import { Dna } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import { AIArticle, Badge, HoverDiv, primaryColor } from "./ArticleList";
-import { parseDateTime } from "./utils";
 import styled from "styled-components";
-import { readAllComments, readComments } from "./auth/firebase";
 
 interface ILazyArticleLoader {
     articles: AIArticle[];
     isList: boolean
+    comments: any[]
 }
 
 
@@ -61,9 +60,10 @@ const ArticleListElement = styled.div`
 `
 
 
-const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
+const LazyArticleLoader = ({ articles, isList, comments }: ILazyArticleLoader) => {
     const [visibleArticles, setVisibleArticles] = useState<AIArticle[]>([]);
-    const [comments, setComments] = useState<any[]>([]);
+
+    console.log(comments)
     const observer: any = useRef();
 
     const navigate = useNavigate();
@@ -73,12 +73,6 @@ const LazyArticleLoader = ({ articles, isList }: ILazyArticleLoader) => {
     }
 
     useEffect(() => {
-
-
-        readAllComments().then((comments) => {
-            console.log(comments);
-            setComments(comments);
-        })
 
         observer.current = new IntersectionObserver(handleObserver, {
             root: null,

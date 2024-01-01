@@ -4,7 +4,6 @@ import { Auth } from "./auth/signIn";
 import { Profile } from "./auth/profile";
 import { ImSun } from 'react-icons/im';
 import HistoryArticles from "./auth/HistoryArticles";
-import Demo from "./Demo";
 import SummarizationArticle from './SummarizationArticle';
 import { StripeSuccess } from './payments/Success';
 import { StripeCancel } from './payments/Cancel';
@@ -109,7 +108,6 @@ export const App = () => {
           <GlobalContainer>
             <Routes>
               <Route path="/" element={<ColorContainer><Home /></ColorContainer>} />
-              <Route path="/demo" element={<Demo />} />
               <Route path="/conversation" element={<Conversation />} />
   
               Payments

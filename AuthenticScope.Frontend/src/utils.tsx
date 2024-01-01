@@ -53,7 +53,7 @@ export const getTimePeriodFilters = () => {
     ];
 
     const today = new Date();
-    const timePeriodFilters = ['Today', 'Yesterday'];
+    const timePeriodFilters = ['Yesterday'];
 
     const currentMonth = today.getMonth();
     for (let i = 0; i < 5; i++) {

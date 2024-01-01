@@ -1,22 +1,33 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "shards-react"
-import { TypeAnimation } from 'react-type-animation';
 import styled from "styled-components";
 import { devices } from "./utils";
+import { signInWithPopup } from "firebase/auth";
+import { useEffect } from "react";
+import { auth, googleProvider } from "./auth/firebase";
+import { FcGoogle } from "react-icons/fc";
+import heroImage from "./images/authenticscopemain.jpg";
 
+const MainContainer = styled.div`
+    flex-direction: column;
 
-const HomeContainer = styled.div`
-    padding-top: 20px;
-    @media ${devices.laptopL} {
-        padding-top: 20%;
-      }
-    `
+  @media ${devices.laptopL} {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  }
+`
+
 
 const Header = styled.h1`
-    font-size:42px;
-    max-width:50%;
+    font-size:24px;
+    color: #fff;
+    margin-bottom: 20vh;
+
     @media ${devices.laptopL} {
-        font-size: 48px;
+        font-size: 24px;
+        margin: 0 0 20% 0;
       }
 `
 
@@ -43,36 +54,88 @@ export const ButtonContainer = styled.div`
 `
 
 
-const Paragraph = styled.p`
+const MainParagraph = styled.p`
+
     font-size: 24px;
+    color: #fff;
     max-width: 100%;
-    bottom: 20%;
+    font-family: Gilroy-Light;
+
     @media ${devices.laptopL} {
-        margin-top: 0%;
-        font-size: 18px;
-        max-width: 50%;
-        }
+        width: 420px;
+        font-size: 24px;
+        color: #fff;
+        max-width: 100%;
+        font-family: Gilroy-Light;
+    }
+    `
+
+const TextContainer = styled.div`
+margin-top: 4vh;
+width: 100%;
+@media ${devices.laptopL} {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5vh;
+  width: 60%;
+}
 `
+
+const MainImage = styled.img`
+
+display:none;
+
+  @media ${devices.laptopL} {
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+    display:flex;
+  }
+`
+
 
 const Home = () => {
 
+
+    const navigate = useNavigate();
+
+    const signInWithGoogle = async () => {
+        try {
+            const signInCredentials = await signInWithPopup(auth, googleProvider);
+            if (signInCredentials) {
+                navigate('/profile');
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
+    const navigateToProfile = () => {
+        navigate('/profile');
+    }
+
+    useEffect(() => {
+        if (auth?.currentUser?.email) {
+            navigateToProfile();
+        }
+    }, [auth?.currentUser?.email])
+
+
     return (
-        <HomeContainer>
-            <Header><b>Authentic Scope</b></Header>
-            <Paragraph>Turn articles into audio with cutting-edge NLP. Get concise summaries for listening on the go, presentations, and accessibility. Streamline content into engaging audio formats effortlessly.</Paragraph>
-            <Link to="/demo">
-                <ButtonContainer>
-                    <Button theme="dark">
-                        Try summarization
-                    </Button>
-                </ButtonContainer>
-            </Link>
-            {/* <Link to="/conversation">
-                <Button style={{ marginLeft: '10px' }} outline theme="dark">
-                    Try conversations
-                </Button>
-            </Link> */}
-        </HomeContainer>
+        <MainContainer>
+            <TextContainer>
+                <Header><b>Authentic Scope</b></Header>
+                <MainParagraph>Get concise <u>today</u> summaries about AI
+                    Trustworthy, easy, seamlessly.</MainParagraph>
+                {!auth?.currentUser?.email &&
+                    <ButtonContainer onClick={() => signInWithGoogle()} style={{ display: 'flex' }}>
+                        <Button theme="dark"><FcGoogle size={"24px"} />Sign up</Button></ButtonContainer>
+                }
+            </TextContainer>
+            <MainImage src={heroImage} />
+        </MainContainer>
+
     )
 }
 

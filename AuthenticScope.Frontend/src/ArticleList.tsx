@@ -1,11 +1,12 @@
 
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { FormSelect, Tooltip } from "shards-react";
 import { Dna } from 'react-loader-spinner'
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
-import { IoIosReturnLeft } from "react-icons/io";
-
+import TechcrunchLogo from './images/techcrunchlogo.svg';
+import NYTimesLogo from './images/nytimeslogo.svg';
+import MediumLogo from './images/mediumlogo.svg';
 import { devices, getCurrentMonthName, getTimePeriodFilters, parseDate, parseDateTime, parseTodayToDate, parseYesterdayToDate } from "./utils";
 import techCrunchArticlesArchive from './data/techcrunch.json';
 import nyTimesArticlesArchive from './data/nytimes.json';
@@ -13,9 +14,9 @@ import deepmindArticlesArchive from './data/deepmind.json';
 import mediumArticlesArchive from './data/medium.json';
 import LazyArticleLoader from "./LazyArticleList";
 import { BsCardChecklist, BsListUl } from "react-icons/bs";
-
 import Menu from "./components/Menu";
 import Search from "./components/Search";
+import { readAllComments, readComments } from "./auth/firebase";
 interface ISelect {
     options: string[];
     setState: (value: string) => void;
@@ -95,6 +96,61 @@ export const HoverDiv = styled.div`
     }
 `;
 
+const TodayArticles = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
+
+const TodayArticle = styled.div`
+    display: flex;
+    width: 100%;
+    border: 1px solid #363537;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+    h2 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        border: 1px solid ${primaryColor};
+    }
+
+    @media ${devices.laptopL} {
+        width: 33%;
+        height:160px;
+        }
+`;
+
+const TodayArticleHeader = styled.div`
+    display:flex;
+    align-items: flex-start;
+
+    > p {
+        font-size: 12px;
+        font-weight: 800;
+    }
+    `
+
+const ArticleLogo = styled.img`
+    margin-right: 10px;
+`
+
+const TodayBadge = styled.div`
+    background: yellow;
+    color: #363537;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+  `
+
+
 export const Select = ({ options, setState }: ISelect) => {
 
     return (
@@ -122,6 +178,7 @@ const ArticleList = () => {
 
 
     const [loading, setLoading] = useState(false);
+    const [comments, setComments] = useState<any[]>([]);
     const [techcrunchUrls, setTechcrunchUrls] = useState<AIArticle[]>(techCrunchArticlesArchive);
     const [deepMindUrls, setDeepMindUrls] = useState<AIArticle[]>(deepmindArticlesArchive);
     const [nyTimesUrls, setNyTimesUrls] = useState<AIArticle[]>(nyTimesArticlesArchive);
@@ -255,6 +312,27 @@ const ArticleList = () => {
         )
 
 
+    const todayArticles = filteredArticles.filter((article: AIArticle) => parseDate(article.AIArticleDate) == parseTodayToDate())
+
+    const renderLogo = (link: string) => {
+
+        if (link.includes('techcrunch')) {
+            return <ArticleLogo src={TechcrunchLogo} />
+        }
+        if (link.includes('medium')) {
+            return <ArticleLogo src={MediumLogo} />
+        }
+        if (link.includes('nytimes')) {
+            return <ArticleLogo src={NYTimesLogo} />
+        }
+
+    }
+
+    useEffect(() => {
+        readAllComments().then((comments) => {
+            setComments(comments);
+        })
+    }, [])
 
     return (<div style={{ paddingTop: '5%' }}>
         <Menu />
@@ -309,8 +387,25 @@ const ArticleList = () => {
                         </HoverDiv>
                     </Filters>
                 </ScrollingFilters>
+                <TodayArticles>
+                    {todayArticles.length > 0 && todayArticles.slice(2).map((article: AIArticle) => (
+                        <TodayArticle onClick={() => navigate('/article', { state: { article: article } })}>
+                            <TodayArticleHeader>{renderLogo(article.AIArticleLink)}
+                                <p>Today!</p>
+                            </TodayArticleHeader>
+                            <h2>{article.AIArticleTitle.substring(0, 43).trimEnd() + '...'}</h2>
+                            {comments.some((comment: any) => comment.title === article.AIArticleTitle) ? <TodayBadge>
+                                Discussion there! Let’s debate
+                            </TodayBadge> : null}
+                        </TodayArticle>
+
+                    ))}
+                </TodayArticles>
+                <hr />
                 <LazyArticleLoader
+                    comments={comments}
                     articles={filteredArticles
+                        .filter((article: AIArticle) => parseDate(article.AIArticleDate) !== parseTodayToDate())
                         .map(article => ({ ...article, AIArticleDate: parseDateTime(article.AIArticleDate) }))
                         .sort((a, b) => new Date(b.AIArticleDate).getTime() - new Date(a.AIArticleDate).getTime())}
                     isList={isList}

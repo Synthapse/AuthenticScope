@@ -1,5 +1,55 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/31/us/john-roberts-supreme-court.html",
+        "AIArticleTitle": "Chief Justice Roberts Sees Promise and Danger of A.I. in the Courts",
+        "AIArticleDate": "December 31, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/30/business/dealbook/inflation-economy-stocks-year-in-charts.html",
+        "AIArticleTitle": "11 Charts That Explain the Year in Business, Technology and the Economy",
+        "AIArticleDate": "December 30, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/29/business/jobs-skill-new-collar.html",
+        "AIArticleTitle": "Wanted: \u2018New Collar\u2019 Workers",
+        "AIArticleDate": "December 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/interactive/2023/12/29/business/what-are-new-collar-jobs.html",
+        "AIArticleTitle": "Wanted: \u2018New Collar\u2019 Workers",
+        "AIArticleDate": "December 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/29/books/review/mustafa-suleyman-the-coming-wave.html",
+        "AIArticleTitle": "Audiobook of the Week: How to \u2018Contain\u2019 the Threat of A.I.?",
+        "AIArticleDate": "December 29, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/25/espanol/opinion/chatgpt-inteligencia-artificial.html",
+        "AIArticleTitle": "Ha pasado un a\u00f1o y ya estamos al servicio de ChatGPT",
+        "AIArticleDate": "December 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/25/technology/the-2023-good-tech-awards.html",
+        "AIArticleTitle": "The 2023 Good Tech Awards",
+        "AIArticleDate": "December 25, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/21/opinion/chatgpt-artificial-intelligence-writing.html",
+        "AIArticleTitle": "Our Semicolons, Ourselves",
+        "AIArticleDate": "December 21, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/21/espanol/tendencias-economia-2023.html",
+        "AIArticleTitle": "Lo que aprendimos de la econom\u00eda de 2023 gracias a las tendencias sociales",
+        "AIArticleDate": "December 21, 2023"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2023/12/20/business/economy/social-trends-2023-economy.html",
+        "AIArticleTitle": "What Social Trends Taught Us About the 2023 Economy",
+        "AIArticleDate": "December 20, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/12/26/opinion/ai-future-photography.html",
         "AIArticleTitle": "A.I. Is the Future of Photography. Does That Mean Photography Is Dead?",
         "AIArticleDate": "December 26, 2023"
