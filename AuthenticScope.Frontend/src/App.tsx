@@ -67,10 +67,10 @@ export const lightTheme = {
   background: '#363537',
 }
 export const darkTheme = {
-  body: '#363537',
+  body: '#1b1b1e',
   text: '#FAFAFA',
-  toggleBorder: '#6B8096',
-  background: '#999',
+  toggleBorder: '#1b1b1e',
+  background: '#1b1b1e',
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -89,6 +89,8 @@ export const GlobalStyles = createGlobalStyle`
 
 export const App = () => {
     const [theme, setTheme] = useState('light');
+
+    
     const toggleTheme = () => {
       if (theme === 'light') {
         setTheme('dark');
@@ -103,7 +105,6 @@ export const App = () => {
     return (
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <div style={{ position: 'absolute', right: 20 }}><ImSun style={{ fontSize: '24px' }} onClick={toggleTheme}>Toggle Theme</ImSun></div>
         <HashRouter>
           <GlobalContainer>
             <Routes>
@@ -118,7 +119,7 @@ export const App = () => {
               <Route path="/auth" element={<Auth />}></Route>
               <Route path="/articleList" element={<ArticleList />} />
               <Route path="/article" element={<SummarizationArticle />} />
-              <Route path="/profile" element={<Profile />}></Route>
+              <Route path="/profile" element={<Profile toggleTheme ={toggleTheme} />}></Route>
               <Route path="/history" element={<HistoryArticles />}></Route>
             </Routes>
           </GlobalContainer>
