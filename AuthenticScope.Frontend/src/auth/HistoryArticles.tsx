@@ -6,17 +6,6 @@ import Menu from "../components/Menu";
 import styled from "styled-components";
 import Accordion from "../components/Accordion";
 
-const HistoryItem = styled.div`
-    border-bottom-width: 1;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-color: #808080;
-    border-style: solid;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    `
-
 const HistoryArticles = () => {
 
     const [historyData, setHistoryData] = useState<IHistoryEvent[] | any>([]);
@@ -56,9 +45,9 @@ const HistoryArticles = () => {
                 !loading ?
                     uniqueHistoryData.sort((a: { date: number; }, b: { date: number ; }) => b.date - a.date).map((item: IHistoryEvent, index: number) => {
                         return (
-                            <HistoryItem key={index}>
+                            <div key={index}>
                                 <Accordion title={item.title} content={item.content} date={item.date && item.date.toDate().toString()} />
-                            </HistoryItem>
+                            </div>
                         )
                     }) : <Dna
                         visible={true}

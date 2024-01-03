@@ -10,28 +10,29 @@ interface IAccordion {
 
 const AccordionItem = styled.div`
     border-bottom-width: 0;
-    border-top-width: 0;
+    border-top-width: 1;
     border-left-width: 0;
     border-right-width: 0;
     border-color: #808080;
     border-style: solid;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
     `
 
 const AccordionTitle = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     font-size: 18px;
-    font-weight: medium;
+    font-weight: bold;
     line-height: 1.45;
     cursor: pointer;
     `
 
 const AccordionContent = styled.div`
-    padding: 10px;
+    padding: 10px 0 ;
 `
 
 const Accordion = ({ title, date, content }: IAccordion) => {
