@@ -1,9 +1,10 @@
 import { IHistoryEvent, auth, readHistoryData } from "./firebase";
 import { useEffect, useState } from "react";
-import { DocumentData } from "firebase/firestore";
+import { DocumentData, Timestamp } from "firebase/firestore";
 import { Dna } from "react-loader-spinner";
 import Menu from "../components/Menu";
 import styled from "styled-components";
+import Accordion from "../components/Accordion";
 
 const HistoryItem = styled.div`
     border-bottom-width: 1;
@@ -37,18 +38,26 @@ const HistoryArticles = () => {
         fetchHistoryData();
     }, [])
 
+    const uniqueHistoryData = historyData.reduce((accumulator: any[], current: { title: string; }) => {
+        if (!accumulator.find((item) => item.title === current.title)) {
+            accumulator.push(current);
+        }
+        return accumulator;
+    }, []);
+
+
     return (
         <div style={{ paddingTop: '5%' }}>
             <Menu />
-            <h2>History:</h2>
+
+            <b>{uniqueHistoryData.length} articles</b> saves in your private AI space.
+
             {
                 !loading ?
-                    historyData.map((item: IHistoryEvent, index: number) => {
+                    uniqueHistoryData.sort((a: { date: number; }, b: { date: number ; }) => b.date - a.date).map((item: IHistoryEvent, index: number) => {
                         return (
                             <HistoryItem key={index}>
-                                <h4>{item.title}</h4>
-                                <p>{item.date && item.date.toDate().toString()}</p>
-                                <p>{item.content}</p>
+                                <Accordion title={item.title} content={item.content} date={item.date && item.date.toDate().toString()} />
                             </HistoryItem>
                         )
                     }) : <Dna

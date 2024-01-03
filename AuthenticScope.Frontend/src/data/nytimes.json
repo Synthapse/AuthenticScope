@@ -1,5 +1,20 @@
 [
     {
+        "AIArticleLink": "https://www.nytimes.com/2024/01/02/opinion/ai-police-regulation.html",
+        "AIArticleTitle": "How the Federal Government Can Rein In A.I. in Law Enforcement",
+        "AIArticleDate": "January 02, 2024"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/2024/01/02/us/state-legislatures-2024.html",
+        "AIArticleTitle": "In 2024, Expect New Debates on A.I., Gender and Guns",
+        "AIArticleDate": "January 02, 2024"
+    },
+    {
+        "AIArticleLink": "https://www.nytimes.com/es/2023/12/27/espanol/new-york-times-demanda-openai-microsoft.html",
+        "AIArticleTitle": "The New York Times demanda a OpenAI y Microsoft por el uso de obras con derechos de autor en la IA",
+        "AIArticleDate": "December 27, 2023"
+    },
+    {
         "AIArticleLink": "https://www.nytimes.com/2023/12/31/us/john-roberts-supreme-court.html",
         "AIArticleTitle": "Chief Justice Roberts Sees Promise and Danger of A.I. in the Courts",
         "AIArticleDate": "December 31, 2023"
