@@ -32,7 +32,7 @@ const AccordionTitle = styled.div`
     `
 
 const AccordionContent = styled.div`
-    padding: 10px 0 ;
+    padding: 10px 0;
 `
 
 const Accordion = ({ title, date, content }: IAccordion) => {
