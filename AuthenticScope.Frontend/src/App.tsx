@@ -3,7 +3,7 @@ import Hotjar from '@hotjar/browser';
 import { Auth } from "./auth/signIn";
 import { Profile } from "./auth/profile";
 import { ImSun } from 'react-icons/im';
-import HistoryArticles from "./auth/HistoryArticles";
+import AISpace from "./auth/AISpace";
 import SummarizationArticle from './SummarizationArticle';
 import { StripeSuccess } from './payments/Success';
 import { StripeCancel } from './payments/Cancel';
@@ -16,6 +16,7 @@ import Conversation from './Conversation';
 import ReactDOM from 'react-dom/client';
 import React, { useEffect, useState } from "react";
 import ReactGA from "react-ga4";
+import { auth } from "./auth/firebase";
 const siteId = 3610032;
 const hotjarVersion = 6;
 
@@ -98,7 +99,10 @@ export const App = () => {
         setTheme('light');
       }
     };
-  
+
+    const userId = auth?.currentUser?.uid;
+
+
     useEffect(() => {
       document.body.className = theme;
     }, [theme]);
@@ -119,8 +123,8 @@ export const App = () => {
               <Route path="/auth" element={<Auth />}></Route>
               <Route path="/articleList" element={<ArticleList />} />
               <Route path="/article" element={<SummarizationArticle />} />
-              <Route path="/profile" element={<Profile toggleTheme ={toggleTheme} />}></Route>
-              <Route path="/history" element={<HistoryArticles />}></Route>
+              <Route path="/profile" element={<Profile toggleTheme ={toggleTheme} theme={theme}/>}></Route>
+              <Route path="/aiSpace/:userId" element={<AISpace />} />
             </Routes>
           </GlobalContainer>
         </HashRouter>

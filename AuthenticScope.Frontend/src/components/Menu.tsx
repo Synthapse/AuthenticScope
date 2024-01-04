@@ -5,6 +5,7 @@ import { PiArticle } from 'react-icons/pi';
 import { GoHistory } from 'react-icons/go';
 import styled, { ThemeContext } from 'styled-components';
 import { lightTheme } from '../App';
+import { auth } from '../auth/firebase';
 
 
 
@@ -55,6 +56,7 @@ const Menu = () => {
     };
 
     const iconSize = '24px';
+    const userId = auth?.currentUser?.uid;
 
     return (
         <ThemeContext.Consumer>
@@ -63,7 +65,7 @@ const Menu = () => {
                     <MenuItem onClick={() => navigateToPage("/articleList")}>
                         <p><PiArticle style={{ fontSize: iconSize }} /></p>
                     </MenuItem>
-                    <MenuItem onClick={() => navigateToPage("/history")}>
+                    <MenuItem onClick={() => navigateToPage(`/aiSpace/${userId}`)}>
                         <p><GoHistory style={{ fontSize: iconSize }} /></p>
                     </MenuItem>
                     <MenuItem onClick={() => navigateToPage("/profile")}>

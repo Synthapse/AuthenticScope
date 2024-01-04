@@ -1,20 +1,30 @@
 import { signOut } from "firebase/auth";
-import { auth } from "./firebase";
+import { auth, getUserProfile, saveUserProfile } from "./firebase";
 import { Button } from "shards-react";
 import { useNavigate } from 'react-router-dom';
-
 import Menu from "../components/Menu";
-import { useContext, useEffect, useState } from "react";
-import { ImSun } from "react-icons/im";
-import { ThemeContext } from "styled-components";
+import { useEffect, useState } from "react";
+import Switch from "react-switch";
+import styled from 'styled-components';
 
-interface IProfile  {
+
+const SwitchElement = styled.div`
+    display:flex;
+`
+
+interface IProfile {
     toggleTheme: () => void;
+    theme: string;
 }
 
-export const Profile = ({toggleTheme} : IProfile) => {
+export const Profile = ({ toggleTheme, theme }: IProfile) => {
 
     const navigate = useNavigate();
+
+
+    const [userProfile, setUserProfile] = useState<any>([]); // [IUserProfile
+    const [publicAISpace, setPublicAISpace] = useState(false);
+    const [darkTheme, setDarkTheme] = useState(theme);
 
     const logOut = async () => {
         try {
@@ -25,6 +35,33 @@ export const Profile = ({toggleTheme} : IProfile) => {
         }
     };
 
+    const handleChange = (checked: boolean) => {
+        setPublicAISpace(checked);
+    }
+
+    const saveUserProfileSettings = () => {
+        saveUserProfile(auth?.currentUser, publicAISpace)
+        fetchUserProfile()
+    }
+
+    const fetchUserProfile = async () => {
+        try {
+            const userProfile = await getUserProfile(auth?.currentUser?.uid ?? "");
+            setUserProfile(userProfile);
+        } catch (error) {
+            console.log("Error fetching history data: ", error);
+        }
+    };
+
+    useEffect(() => {
+
+        fetchUserProfile();
+    }, [])
+
+
+    console.log(userProfile);
+
+
     return (
         <div style={{ paddingTop: '5%' }}>
             <Menu />
@@ -33,8 +70,22 @@ export const Profile = ({toggleTheme} : IProfile) => {
             <p>{auth?.currentUser?.email}</p>
             <Button theme="dark" onClick={logOut}>Log out</Button>
             <hr />
-            <div><ImSun style={{ fontSize: '24px' }} onClick={toggleTheme}>Toggle Theme</ImSun></div>
+            <SwitchElement><Switch checked={theme !== 'light'} onChange={toggleTheme} checkedIcon={false} uncheckedIcon={false} />Dark theme</SwitchElement>
 
+            <hr />
+            {userProfile.length > 0 && <>
+                Your AI space is {userProfile[0].publicAISpace ? "public" : "private"}
+
+                <hr />
+
+                <SwitchElement>
+                    <Switch checked={publicAISpace} onChange={handleChange} checkedIcon={false} uncheckedIcon={false} /> Make your AI space public
+                    <br />
+                </SwitchElement>
+            </>
+            }
+            <hr />
+            <Button theme="dark" onClick={saveUserProfileSettings}>Save</Button>
         </div>
     );
 };

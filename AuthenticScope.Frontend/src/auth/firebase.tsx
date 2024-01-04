@@ -2,7 +2,7 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import config from "../config.json";
-import { getDocs, getFirestore, query, where } from "firebase/firestore";
+import { getDocs, getFirestore, query, updateDoc, where, doc } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -37,6 +37,96 @@ export interface IHistoryEvent {
     content: string | null;
     date: Date | string | any;
 }
+
+export const getUserProfile = async(userId: string) => {
+
+    try {
+
+        const querySnapshot = await getDocs(
+            query(collection(db, "userProfiles"),
+                where("user.userId", "==", userId),
+            )
+        );
+
+        if (!querySnapshot.empty) {
+            const newData = querySnapshot.docs.map((doc) => doc.data());
+            return newData;
+        }
+        return [];
+
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }
+
+}
+
+export const getPublicAIProfiles = async () => {
+
+    try {
+        const querySnapshot = await getDocs(
+            query(collection(db, "userProfiles"),
+                where("publicAISpace", "==", true),
+            )
+        );
+
+            console.log(querySnapshot.docs.map((doc) => doc.data()))
+            const newData = querySnapshot.docs.map((doc) => doc.data());
+            return newData;
+
+    }
+
+    catch (e) {
+        console.error("Error adding document: ", e);
+    }
+}
+
+
+export const saveUserProfile = async (user: any, publicAISpace: boolean) => {
+
+    try {
+
+        const querySnapshot = await getDocs(
+            query(collection(db, "userProfiles"),
+                where("user.userId", "==", user.uid),
+            )
+        );
+
+        if (querySnapshot.empty) {
+
+            const docRef = await addDoc(collection(db, "userProfiles"), {
+                user: {
+                    userId: user.uid,
+                    userName: user.displayName,
+                    userEmail: user.email,
+                    photoUrl: user.providerData[0].photoURL
+                },
+                publicAISpace: publicAISpace,
+                date: new Date()
+            });
+        }
+        else {
+            console.log("This user profiles already exists edit");
+
+            const docRef = await updateDoc(doc(db, "userProfiles", querySnapshot.docs[0].id), {
+                user: {
+                    userId: user.uid,
+                    userName: user.displayName,
+                    userEmail: user.email,
+                    photoUrl: user.providerData[0].photoURL
+                },
+                publicAISpace: publicAISpace,
+                date: new Date()
+            });
+
+
+        }
+
+    } catch (e) {
+        console.error("Error adding document: ", e);
+    }
+
+}
+
 
 export const writeHistoryData = async (data: IHistoryEvent) => {
     const { userId, title } = data;
@@ -80,7 +170,6 @@ export const readHistoryData = async (userId: string) => {
 export const saveComment = async (user: any, title: string, comment: string) => {
 
     const collectionName = "comments"
-    console.log(user);
 
     try {
 
