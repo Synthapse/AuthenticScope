@@ -23,27 +23,6 @@ const hotjarVersion = 6;
 Hotjar.init(siteId, hotjarVersion);
 
 
-const ColorContainer = styled.div`
-
-  padding-left: 20px;
-  background-color: ${primaryColor};
-  position:absolute;
-  min-height: 100vh;
-  max-height: 100vh;
-  min-width: 100vw;
-  left: 0;
-  
-  @media ${devices.laptopL} {
-    position:absolute;
-    min-height: 100%;
-    min-width: 100vw;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    padding-left: 80px;
-  }
-`
-
 const GlobalContainer = styled.div`
   min-height: 100vh;
   height: 100%;
@@ -112,13 +91,12 @@ export const App = () => {
         <HashRouter>
           <GlobalContainer>
             <Routes>
-              <Route path="/" element={<ColorContainer><Home /></ColorContainer>} />
+              <Route path="/" element={<Home />} />
               <Route path="/conversation" element={<Conversation />} />
-  
+
               Payments
               <Route path="/order-confirmation" element={<StripeSuccess />} />
               <Route path="/cancel" element={<StripeCancel />} />
-  
               Auth
               <Route path="/auth" element={<Auth />}></Route>
               <Route path="/articleList" element={<ArticleList />} />

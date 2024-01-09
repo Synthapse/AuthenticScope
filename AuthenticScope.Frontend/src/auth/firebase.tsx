@@ -38,6 +38,7 @@ export interface IHistoryEvent {
     date: Date | string | any;
 }
 
+
 export const getUserProfile = async(userId: string) => {
 
     try {
@@ -151,6 +152,19 @@ export const writeHistoryData = async (data: IHistoryEvent) => {
         }
     } catch (e) {
         console.error("Error adding document: ", e);
+    }
+}
+
+export const readAllHistoryData = async () => {
+    try {
+        const querySnapshot = await getDocs(
+            query(collection(db, "history"))
+        );
+        const newData = querySnapshot.docs.map((doc) => doc.data());
+        return newData;
+    } catch (error) {
+        console.log("Error getting documents: ", error);
+        throw error; // Re-throw the error to be caught by the caller if needed
     }
 }
 
